@@ -8,3 +8,4 @@ git commit -m "This are having complete implementation of delegates and events."
 echo Pushing to git :-
 git push -u origin master
 echo Pushing Done...!!
+pause
