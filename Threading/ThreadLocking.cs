@@ -15,7 +15,7 @@ namespace ThreadingProject
 			lock (this) // the lock keyword will be going to lock the block of code.
 			{
 				Console.Write("[CSharp is an ");
-				Thread.Sleep(3000);
+				Thread.Sleep(2000);
 				Console.WriteLine("Object oriented language.]");
 			}
 		}
