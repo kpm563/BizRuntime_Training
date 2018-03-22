@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>This is playing video in HTML5.</title>
+</head>
+<body>
+	<video width="480" height="320" controls>
+		<source src="movie.mp4" type="video/mp4"/>		
+	</video><br /><br /><br />
+
+	<div style="text-align:left">		
+		<video id="video1" width="480" height="320">
+			<source src="mov_bbb.mp4" type="audio/mp4"/>
+		</video><br />
+		<button onclick="playPause()"> Play/Pause </button>
+		<button onclick="makeBig()"> Big </button>
+		<button onclick="makeSmall()"> Small </button>
+		<button onclick="makeNormal()"> Normal </button>
+	</div>
+
+	<script>
+		var myVideo = document.getElementById("video1");
+
+		function playPause() {
+			if (myVideo.paused)
+				myVideo.play();
+			else
+				myVideo.pause();
+		}
+
+		function makeBig() {
+			myVideo.width = 720;
+			myVideo.height = 480;
+		}
+		function makeSmall() {
+			myVideo.width = 320;
+			myVideo.height = 280;
+		}
+
+		function makeNormal() {
+			myVideo.width = 480;
+			myVideo.height = 320;
+		}
+
+	</script>
+
+	<br /><br />
+
+	<audio controls>
+		<source src="horse.ogg" type="audio/ogg"/>
+	</audio>
+	<br />
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>This is an example of Table with rowsaon in html.</title>
+	
+	<style>
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+
+		th, td {
+			padding: 15px;
+			text-align: left;
+		}
+
+		table#01 {
+			width: 100%;
+			background-color: #f1f1c1;
+		}
+	</style>
+</head>
+<body>
+	<h2>Cell that spans two rows</h2>
+	<p>To make a cell span more than one row, use the rowspan attribute.</p>
+
+	<table>
+		<tr>
+			<th>Name : </th>
+			<td>Bill gates</td>
+		</tr>
+		<tr>
+			<th rowspan="2"> Telephone : </th>
+			<td>1234567890</td>
+		</tr>
+		<tr>
+			<td>0987654321</td>
+		</tr>
+	</table> <br />
+
+	<table id="01">
+		<tr>
+			<th>Name : </th>
+			<td>Bill gates</td>
+		</tr>
+		<tr>
+			<th rowspan="2"> Telephone : </th>
+			<td>1234567890</td>
+		</tr>
+		<tr>
+			<td>0987654321</td>
+		</tr>
+	</table>
+
+</body>
+</html>
