@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>This is the implementation of JSON</title>
+	<style>
+		p {
+			font-size:larger;
+			text-align:left;
+			color:blue;
+			background-color:antiquewhite;
+		}		
+	</style>
+</head>
+<body>
+
+	<div>
+		<p id="demo">Accessing nested JSON objects.</p>
+		<p id="demo1">Modify values in a JSON object.</p>
+		<p id="demo2">Delete properties of a JSON object.</p>
+		<p id="demo3">Access an array value of a JSON object.</p>
+		<p id="demo4">Looping through an array using a for in loop:</p>
+		<p id="demo5">Creating JSON string from a JavaScript object.</p>
+		<p id="demo6">Creating JSON string from a JavaScript array.</p>
+	</div>
+
+
+	<script>
+		var i, j, car = "";
+		var myObj = {
+			"name": "John",
+			"age": 30,
+			"cars": {
+				"car1": "Ford",
+				"car2": "BMW",
+				"car3": "Fiat",
+				"car4": "Toyota",
+				"car5": "Tata"
+			}
+		};
+		document.getElementById("demo").innerHTML += "<br>" + myObj.cars.car2;
+
+		myObj.cars.car2 = "Range Rover";
+		for (i in myObj.cars) {
+			car += myObj.cars[i] + "<br>";
+		}
+		document.getElementById("demo1").innerHTML += "<br>" + car;
+
+		var car1 = ""
+		delete myObj.cars.car3;
+		for (i in myObj.cars) {
+			car1 += myObj.cars[i] + "<br>";
+		}
+		document.getElementById("demo2").innerHTML += "<br>" + car1;
+
+		var myObj1 = {
+			"name": "Steven Smith",
+			"age": 30,
+			"cars": ["Ford", "BMW", "Fiat", "Tata", "Toyota"]
+		};
+
+		x = myObj1.cars[3];
+		document.getElementById("demo3").innerHTML += "<br>" + x;
+
+		var car2="";
+		for (i in myObj1.cars) {
+			car2 += myObj1.cars[i] + "<br>";
+		}
+		document.getElementById("demo4").innerHTML += "<br>" + car2;
+
+		var stringJSON = JSON.stringify(myObj1);
+		document.getElementById("demo5").innerHTML += "<br>" + stringJSON;
+
+		var array = ["Ramesh Khanna", "Rakesh Khanna", "Ritesh Khanna", "Mahesh Khanna"];
+		stringJSON = getElementById = JSON.stringify(array);
+		document.getElementById("demo6").innerHTML += "<br>" + stringJSON;
+
+	</script>
+
+</body>
+</html>
