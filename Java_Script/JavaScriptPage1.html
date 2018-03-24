@@ -1,0 +1,305 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Student registration form</title>
+	<style>
+		h1 {
+			margin-left:70px;
+		}
+		form li {
+			list-style:none;
+			margin-bottom:5px;
+		}
+		form ul li label {
+			float:left;
+			clear:left;
+			width:100px;
+			text-align:right;
+			margin-right:10px;
+			font-family:Verdana, Arial, Helvetica, sans-serif;
+			font-size:14px;
+		}
+		form ul li input, select, span {
+			float:left;
+			margin-bottom:10px;
+		}
+		form textarea {
+			float:left;			
+		}
+		[type="submit"] {
+			clear:left;
+			margin:20px 0 0 110px;
+			font-size:16px;
+		}
+		[type="reset"] {
+			clear:left;
+			margin:-24.5px 0 0 240px;
+			font-size:16px;
+		}
+		p {
+			margin-left:70px;
+			font-weight:bold;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Sign Up Form </h1>
+	<h3>Enter details to register ::</h3>
+	<form name="signUpForm" action="">
+		<ul>
+			<li><label for="firstName">First Name :: </label></li>
+			<li><input type="text" name="firstName" size="15" placeholder="First Name" required autofocus autocomplete="on" /></li>
+			<li><label for="lastName">Last Name :: </label></li>
+			<li><input type="text" name="lastName" size="15" placeholder="Last Name" required autocomplete="on" /></li>
+			<li><label for="email">E-mail :: </label></li>
+			<li><input type="email" name="email" size="20" placeholder="E-mail" required autocomplete="on"/></li>
+			<li><label for="mobileNo">Mobile No :: </label></li>
+			<li><input type="text" name="mobileNo" size="10" placeholder="Mobile Number" onkeypress="return isNumberKey(event)" required autocomplete="on"/></li>
+			<li><label for="gender">Gender :: </label></li>
+			<li><input type="radio" name="gender" value="m" required autofocus/><span>Male</span></li>
+			<li><input type="radio" name="gender" value="f" /><span>Female</span></li>
+			<li><label for="address">Address :: </label></li>
+			<li><textarea name="address" rows="1" cols="30" placeholder="Enter your address" required></textarea></li>
+			<li><label for="city">City :: </label></li>
+			<li><input type="text" name="city" size="20" placeholder="City" required autocomplete="on"/></li>
+			<li><label for="state">State :: </label></li>
+			<li><input type="text" name="state" size="20" required placeholder="State" autocomplete="on"/></li>
+			<li><label for="country">Country :: </label></li>
+			<li>
+				<select name="country">
+					<option selected="" value="Default">Please select your country</option>
+					<option value="AU" >Australia</option>
+					<option value="CA">Canada</option>
+					<option value="IN">India</option>
+					<option value="RS">Russia</option>
+					<option value="US">USA</option>
+				</select>
+			</li>
+			<li><label for="pincode">PIN Code :: </label></li>
+			<li><input type="text" name="pinCode" size="6" placeholder="PIN Code" required onkeypress="return isPinNumberKey(event);"/></li>
+			<li><label>Language :: </label></li>
+			<li><input type="checkbox" name="en" value="en" checked  required/><span>English</span></li>
+			<li><input type="checkbox" name="noen" value="noen" /><span>Non-English</span></li>
+			<li><input type="submit" name="submit" value="Submit" onclick="return validateForm();"/></li>
+			<li><input type="reset"name="reset"value="Reset"/></li>
+
+		</ul>
+
+	</form>
+
+
+	<script>
+
+		function validateForm() {
+			var firstName = document.signUpForm.firstName;
+			var lastName = document.signUpForm.lastName;
+			var email = document.signUpForm.email;
+			var mobile = document.signUpForm.mobileNo;
+			var gender = document.signUpForm.gender;
+			var address = document.signUpForm.address;
+			var city = document.signUpForm.city;
+			var state = document.signUpForm.state;
+			var country = document.signUpForm.country;
+			var pinCode = document.signUpForm.pinCode;
+			var language = document.signUpForm.language;
+
+			if (validateFirstName(firstName)) {
+				if (validateLastName(lastName)) {
+					if (validateEmail(email)) {
+						if (validateMobile(mobile)) {
+							if (validateGender(gender)) {
+								if (validateAddress(address)) {
+									if (validateCity(city)) {
+										if (validateState(state)) {
+											if (validateCountry(country)) {
+												if (validatePinCode(pinCode)) {
+													if (validateLanguage(language)) {
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			return false;
+		}
+
+		function validateFirstName(firstName) {
+			var validName = /^[A-Za-z]+$/;
+			if (firstName.value.match(validName) && firstName.value.length >= 3) {
+				return true;
+			}
+			else {
+				alert("First Name must be alphabets only and minimum 3 characters!");
+				firstName.focus();
+				return false;
+			}
+		}
+
+		function validateLastName(lastName) { 
+			var validName = /^[A-Za-z]+$/;
+			if (lastName.value.match(validName) && lastName.value.length >= 3) {
+				return true;
+			}
+			else {
+				alert("Last Name must be alphabets only and minimum 3 characters!");
+				lastName.focus();
+				return false;
+			}
+		}
+
+		function validateEmail(email) {
+			var validEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+			if (email.value.match(validEmail)) {
+				return true;
+			}
+			else {
+				alert("Enter a valid e-mail address!");
+				email.focus();
+				return false;
+			}
+		}
+
+		function isNumberKey(evt) {
+			var charCode = (evt.which) ? evt.which : event.keyCode;
+			if (charCode != 46 && charCode > 31 && (charCode < 48 || charCode > 57)) {
+				alert("Enter valid 10 digit Mobile number!");
+				//mobile.focus();
+				return false;
+			}
+			return true;
+		}
+
+		function validateMobile(mobile) {			
+			if (mobile.value.length == 10) {
+				return true;
+			}
+			else {
+				alert("Enter a valid 10 digit mobile number!");
+				mobile.focus();
+				return false;
+			}				
+		}
+
+		function validateGender(gender) {
+			var flag = true;
+			for (var i = 0; i < gender.length; i++) {
+				if (gender[i].checked) {
+					flag = false;
+					break;
+				}
+				if (flag) {
+					alert("Plaese select your gender");
+					gender[0].focus();
+					return false;
+				}
+				else {
+					return true;
+				}
+			}
+		}
+
+		function validateAddress(address) {
+			if (address.value.length < 10) {
+				alert("Enter a valid address!")
+				address.focus();
+				return false;
+			}
+			else {
+				return true;
+			}
+		}
+
+		function validateCity(city) {
+			var validName = /^[A-Za-z]+$/;
+			if (city.value.match(validName) && city.value.length > 3) {
+				return true;
+			}
+			else {
+				alert("Enter a valid city name!")
+				city.focus();
+				return false;
+			}
+		}
+		
+		function isPinNumberKey(evt) {
+			var charCode = (evt.which) ? evt.which : event.keyCode;
+			if (charCode != 46 && charCode > 31 && (charCode < 48 || charCode > 57)) {
+				alert("Enter valid 6 digit PIN Code!");
+				pinCode.focus();
+				return false;
+			}
+			return true;
+		}
+
+		function validatePinCode(pinCode) {
+			if (pinCode.length == 6) {
+				return true;
+			}
+			else {
+				alert("Enter a valid 10 digit mobile number!");
+				pinCode.focus();
+				return false;
+			}
+		}
+
+
+		function validateState(state) {
+			var validName = /^[A-Za-z]+$/;
+			if (state.value.match(validName)) {
+				return true;
+			}
+			else {
+				alert("State Name must be alphabets only!");
+				state.focus();
+				return false;
+			}
+		}
+
+		function validateCountry(country) {
+			var flag = true;
+			for (var i = 1; i < contry.length; i++) {
+				if (country[i].selected) {
+					flag = false;
+					break;
+				}
+				if (flag) {
+					alert("Please Select your countrty!");
+					country.focus();
+					return false;
+				}
+				else {
+					return true;
+				}
+			}
+		}
+
+		function validateLanguage(language) {
+			var flag = true;
+			for (var i = 0; i < language.value.length; i++) {
+				if (language[i].checked) {
+					flag = false;
+					break;
+				}
+				if (flag) {
+					alert("Please select any language!");
+					language.focus();
+					return false;
+				}
+				else {
+					return true;
+				}
+			}
+		}
+
+
+	</script>
+	
+</body>
+</html>

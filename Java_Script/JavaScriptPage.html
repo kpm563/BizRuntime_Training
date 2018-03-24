@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript</title>
+	<script src="jstut.js"></script>
+	<style type="text/css">
+		body {
+			font-size:1.6em;
+		}
+		.hidden {
+			display:none;
+		}
+		.show {
+			display:inline !important;
+		}
+		button {
+		border:2px solid black; background:#e5e4e2;
+		font-size:.5em;font-weight:bold;color:black;
+		padding:.8em 2em;
+		margin:.4em;
+		}
+	</style>
+</head>
+<body>
+	<p id="id01"></p>
+	<p id="id02"></p>
+	<p id="id03"></p>
+	<p id="id04"></p>
+	<p id="id05"></p>
+	<p id="id06"></p>
+	<p id="id07"></p>
+	<p id="id08"></p>
+	<p id="id09"></p>
+	<p id="id10"></p>
+	<p id="id11"></p>
+	<p id="id12"></p>
+	<p id="id13"></p>
+
+	<script>
+		//var yourName = prompt("What is your name?");
+
+		//if (yourName != null) {
+		//	document.getElementById("id01").innerHTML = "Hello " + yourName;
+		//}
+		//else {
+		//	alert("Please Enter your name next time.");
+		//}
+
+		// Variables //
+
+		var actorName = "Rajesh Khanna";
+		var actorAge = 50;
+
+		document.getElementById("id02").innerHTML = "" + actorName + " " + actorAge;
+		// Varibles don't have a defined type.
+		actorName = 100;
+		document.getElementById("id02").innerHTML += " " + actorName;
+	</script>
+
+</body>
+</html>
