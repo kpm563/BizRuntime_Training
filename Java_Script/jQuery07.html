@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>JQuery implementation</title>
+	<script src="Scripts/jquery-3.3.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+			$("p").hover(function () {
+				$(this).css("background-color", "red");
+				$(this).css("color", "white");
+			},
+				function () {
+					$(this).css("background-color", "green");
+					$(this).css("color", "yellow");
+				});
+		});
+
+	</script>
+</head>
+<body>
+
+	<h3>Color of the paragraphs will chnage when mouse enters and leaves.</h3>
+	<p>I am a paragraph</p>
+	<p>i am also a paragraph.</p>	
+
+</body>
+</html>

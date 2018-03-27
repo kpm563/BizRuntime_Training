@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>JQuery implementation</title>
+	<script src="Scripts/jquery-3.3.1.min.js"></script>
+	<script>
+
+		$(document).ready(function () {
+			$("button").click(function () {
+				$("#test").hide();
+			});
+		});
+
+	</script>
+</head>
+<body>
+
+	<h3>This will only hide selected ID element i.e another paragraph.</h3>
+
+	<p>This is paragraph.</p>
+	<p id="test">This is another paragraph</p>
+	<button>Hide another paragraph</button>
+
+</body>
+</html>

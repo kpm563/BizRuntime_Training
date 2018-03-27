@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>JQuery implementation</title>
+	<script src="Scripts/jquery-3.3.1.min.js"></script>
+	<script>
+
+		$(document).ready(function () {
+			$("button").click(function () {
+				$(".test").hide();
+			});
+		});
+
+	</script>
+</head>
+<body>
+
+	<h3>This will hide all the data of same class.</h3>
+	<h4 class="test">This is heading and can also hide.</h4>
+	<p class="test">This is paragraph and it will hide</p>
+	<button>Hide the class</button>
+
+</body>
+</html>

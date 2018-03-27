@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ajax Implementation</title>
+</head>
+<body>
+
+	<h3>Reading data from JSON file</h3>
+
+	Name :: <span id="Name"></span><br />
+	City :: <span id="City"></span><br />
+
+	<button type="button" onclick="readJson();">Get details</button>
+
+
+	<script>
+
+		function readJson() {
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function () {
+				if (this.readyState == 4) {
+					var jsonObj = JSON.parse(xhttp.responseText);
+					document.getElementById("Name").innerHTML = jsonObj.Name;
+					document.getElementById("City").innerHTML = jsonObj.City;
+				}
+			};
+			xhttp.open("GET", "jsonData.json", true);
+			xhttp.send();
+		}
+
+	</script>
+
+</body>
+</html>

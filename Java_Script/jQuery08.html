@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>JQuery implementation</title>
+	<script src="Scripts/jquery-3.3.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+			$("input").focus(function () {
+				$(this).css("background-color", "yellow");
+				$(this).css("color", "red");
+			});
+			$("input").blur(function () {
+				$(this).css("background-color", "white");
+				$(this).css("color", "black");
+			});
+		});
+
+	</script>
+</head>
+<body>
+
+	First Name :: <input type="text"name="firstName"/><br /><br />
+	Last Name :: <input type="text"name="lastName" />
+
+</body>
+</html>

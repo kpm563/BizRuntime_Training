@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ajax Implementation</title>
+</head>
+<body>
+
+	<h3>Reading data from xml file </h3>
+
+	<button type="button"onclick="loadDoc();">Get details</button><br />
+
+	<table id="xmlTable"></table>
+
+
+	<script>
+
+		function loadDoc() {
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function () {
+				if (this.readyState == 4 && this.status == 200) {
+					callFunction(this);
+				}
+			};
+			xhttp.open("GET", "xmlData.xml", true);
+			xhttp.send();
+		}
+
+	
+		function callFunction(xml) {
+			var table = "<tr><th>Name</th><th>Address</th><th>Country</th><th>Age</th>";
+			var xmlDoc = xml.responseXML.getElementsByTagName("SR");
+			for (var i = 0; i < xmlDoc.length; i++) {
+				table += "<tr><td>" + xmlDoc[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue + "</td><td>" + xmlDoc[i].getElementsByTagName("ADDRESS")[0].childNodes[0].nodeValue + "</td><td>" + xmlDoc[i].getElementsByTagName("COUNTRY")[0].childNodes[0].nodeValue + "</td><td>" + xmlDoc[i].getElementsByTagName("AGE")[0].childNodes[0].nodeValue + "</td></tr>";
+			}
+			document.getElementById("xmlTable").innerHTML = table;
+		}
+
+	</script>
+
+</body>
+</html>
