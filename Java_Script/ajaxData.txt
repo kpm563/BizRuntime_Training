@@ -5,3 +5,5 @@ AJAX is a technique for accessing web servers from a web page.<br/>
 AJAX stands for Asynchronous JavaScript And XML.<br/>
 <br/>
 Using AJAX we can change content of a web page without reloading the whole page.
+<br/>
+Using jQuery, It become more easy to manipulate data in file.

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.test {
+			color: red;
+			font-size: 20px;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#button1").click(function () {
+				$("#div1").remove();
+			});
+			$("#button2").click(function () {
+				$("#div1").empty();
+			});
+			$("#button3").click(function () {
+				$("p").remove(".test");
+			});
+		});
+	</script>
+</head>
+<body>
+
+
+
+	<button id="button1">Remove div element</button>
+	<button id="button2">Empty the div element</button>
+	<button id="button3">Remove all red content</button>
+	<br /><br />
+
+	<div id="div1" style="height:100px;width:300px;border:1px solid black;background-color:yellow;">
+
+		This is some text in the div.
+		<p>This is a paragraph in the div.</p>
+		<p>This is another paragraph in the div.</p>
+		
+	</div>
+	<div>
+		<p class="test">This is another paragraph.</p>
+		<p class="test">This is another paragraph.</p>
+	</div>
+	<br>
+
+
+
+</body>
+</html>
