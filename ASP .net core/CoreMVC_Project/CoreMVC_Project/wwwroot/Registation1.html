@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+$(document).ready(function(){
+    $("input").focus(function () {
+        $(this).css("background-color", "tomato");
+    });
+});
+    </script>
+</head>
+<body>
+
+    <h2>Regestration page </h2>
+    <label for="phonenum">First Name</label><br />
+    <input id="numb1"><br />
+    <p id="demo1"></p>
+    <label for="phonenum">Address</label><br />
+    <input id="numb2"><br />
+    <p id="demo2"></p>
+    <label for="phonenum">Email id</label><br />
+    <input id="numb3"><br />
+    <p id="demo3"></p>
+    <label for="phonenum">Password</label><br />
+    <input id="numb4"><br />
+    <p id="demo4"></p>
+    <label for="phonenum">Phone No.</label><br />
+    <input id="numb5"><br />
+    <p id="demo5"></p>
+
+    <button type="button" onclick="myFunction()">Submit</button>
+    <button type="button" onclick="Store()">Store</button>
+    <button type="button" onclick="myFunction1()">Refresh</button>
+    <p id="demo1"></p>
+
+    <style>
+        p {
+            color: red;
+        }
+    </style>
+
+    <script>
+ function myFunction1() {
+            location.reload();
+        }
+function myFunction() {
+    var x, a, b, c, d, e, text;
+    var name = /^\w{2,15}$/;
+    var add = /^\w{10,100}$/;
+    var phone = /^\d{10}$/;
+    //var password = /(?=^.{8,}$)((?=.*\d)|(?=.*\W{3}))(?![.\n])(?=.*[A-Z]{0,2})(?=.*[a-z]).*$/;
+    var password = /(?=^.{8,}$)((?=.*\d{0,3})|(?=.*\W+))(?![.\n])(?=.*[A-Z]{0,2})(?=.*[a-z]).*$/;
+   // var pass= /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z@\d]{8,10}$/;
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    x = document.getElementById("numb1").value;
+    a = document.getElementById("numb2").value;
+    b = document.getElementById("numb3").value;
+    c = document.getElementById("numb4").value;
+    d = document.getElementById("numb5").value;
+     if ( x.match(name)) {
+         text = "correct";
+    } else {
+        text = "Enter 2-15 character";
+    }
+     document.getElementById("demo1").innerHTML = text;
+     if (a.match(add)) {
+        text = "correct";
+     } else {
+         text = "Enter 10-100 character";
+     }
+     document.getElementById("demo2").innerHTML = text;
+     if (b.match(mailformat)) {
+         text = "correct";
+     } else {
+         text = "Invalid email id please enter the correct email id";
+     }
+     document.getElementById("demo3").innerHTML = text;
+     if (c.match(password)) {
+         text = "correct";
+     } else {
+         text = "Min 8 character minimum 2 capital litter at least 3 special character";
+     }
+     document.getElementById("demo4").innerHTML = text;
+     if (d.match(phone)) {
+         text = "correct";
+     } else {
+         text = "Enter 10 digits number";
+     }
+     document.getElementById("demo5").innerHTML = text;
+     var name = document.getElementById('x');
+     localStorage.setItem('name',"chandra");
+}
+// storing input from register-form
+function Store() {
+    x = document.getElementById("numb1").value;
+    a = document.getElementById("numb2").value;
+    b = document.getElementById("numb3").value;
+    c = document.getElementById("numb4").value;
+    d = document.getElementById("numb5").value;
+    localStorage.setItem('name', x);
+    localStorage.setItem('add', a);
+    localStorage.setItem('email', b);
+    localStorage.setItem('pass', c);
+    localStorage.setItem('phone', d);
+
+}
+    </script>
+
+</body>
+</html>

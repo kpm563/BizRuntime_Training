@@ -1,0 +1,11 @@
+E:\BizRunTime_C#\CoreMVC_Project\CoreMVC_Project\bin\Debug\netcoreapp2.0\CoreMVC_Project.deps.json
+E:\BizRunTime_C#\CoreMVC_Project\CoreMVC_Project\bin\Debug\netcoreapp2.0\CoreMVC_Project.runtimeconfig.json
+E:\BizRunTime_C#\CoreMVC_Project\CoreMVC_Project\bin\Debug\netcoreapp2.0\CoreMVC_Project.runtimeconfig.dev.json
+E:\BizRunTime_C#\CoreMVC_Project\CoreMVC_Project\bin\Debug\netcoreapp2.0\CoreMVC_Project.dll
+E:\BizRunTime_C#\CoreMVC_Project\CoreMVC_Project\obj\Debug\netcoreapp2.0\CoreMVC_Project.csprojResolveAssemblyReference.cache
+E:\BizRunTime_C#\CoreMVC_Project\CoreMVC_Project\obj\Debug\netcoreapp2.0\CoreMVC_Project.csproj.CoreCompileInputs.cache
+E:\BizRunTime_C#\CoreMVC_Project\CoreMVC_Project\obj\Debug\netcoreapp2.0\CoreMVC_Project.AssemblyInfoInputs.cache
+E:\BizRunTime_C#\CoreMVC_Project\CoreMVC_Project\obj\Debug\netcoreapp2.0\CoreMVC_Project.AssemblyInfo.cs
+E:\BizRunTime_C#\CoreMVC_Project\CoreMVC_Project\bin\Debug\netcoreapp2.0\CoreMVC_Project.pdb
+E:\BizRunTime_C#\CoreMVC_Project\CoreMVC_Project\obj\Debug\netcoreapp2.0\CoreMVC_Project.dll
+E:\BizRunTime_C#\CoreMVC_Project\CoreMVC_Project\obj\Debug\netcoreapp2.0\CoreMVC_Project.pdb
