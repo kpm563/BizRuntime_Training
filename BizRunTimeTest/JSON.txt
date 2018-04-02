@@ -1,0 +1,373 @@
+"{
+  "Pallete": {
+    "General": {
+      "Type": "boolean",
+      "Value": true
+    },
+    "Arrows": {
+      "Type": "boolean",
+      "Value": true
+    },
+    "Basic": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "Clipart": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "FlowChart": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "Android": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "Atlassian": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "Bootstrap": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "EntityRelation": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "IOS": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "Mockup": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "UML": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "AWS": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "AWS3D": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "Azure": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "Cloud&Enterprise": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "Cisco": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "Citrix": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "GoogleCloudPlateform": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "IBM": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "Network": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "Office": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "Rack": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "Veeam": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "ArchiMate3.0": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "ArchiMate2.1": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "BPMN": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "LeanMapping": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "SysML": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "Cabinets": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "EIP": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "Electrical": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "Floorplans": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "MaterialDesign": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "ProcessEng": {
+      "Type": "boolean",
+      "Value": true
+    },
+    "WebIcons": {
+      "Type": "boolean",
+      "Value": false
+    },
+    "Signs": {
+      "Type": "boolean",
+      "Value": false
+    }
+  },
+  "Assets": {
+    "BaseLayers": {
+      "Name": {
+        "Type": "String",
+        "Value": "Satellite"
+      }
+    },
+    "LastView": {
+      "Latitude": {
+        "Type": "Double",
+        "Value": 0
+      },
+      "Longitude": {
+        "Type": "Double",
+        "Value": 0
+      }
+    },
+    "ZoomLevel": {
+      "Type": "Integer",
+      "Value": 4
+    },
+    "TileLayers": {
+      "Agitators": {
+        "CentrifugalCompressor": {
+          "Type": "boolean",
+          "Value": false
+        }
+      },
+      "HeavyOil": {
+        "ReciprocatingCompressor": {
+          "Type": "boolean",
+          "Value": false
+        }
+      },
+      "ConventionalGas": {
+        "Agitator(Flate-Bladepaddle)": {
+          "Type": "boolean",
+          "Value": false
+        }
+      },
+      "Compressors": {
+        "CompressorandSilencer": {
+          "Type": "boolean",
+          "Value": false
+        }
+      },
+      "others": {
+        "Compressor": {
+          "Type": "boolean",
+          "Value": true
+        },
+        "Pipeline": {
+          "Type": "boolean",
+          "Value": false
+        },
+        "ProportionalFeeder(RotaryValve)": {
+          "Type": "boolean",
+          "Value": false
+        },
+        "Boundary": {
+          "Type": "boolean",
+          "Value": false
+        }
+      },
+      "Areas": {}
+    }
+  },
+  "Workfabric": {
+    "Task": {
+      "LastViewedCollections": [
+        {
+          "EntityId": "7335d8b1-d70a-4bef-b79f-5a8262cc1a4c",
+          "IsActive": false,
+          "Type": "Open"
+        },
+        {
+          "EntityId": "e2e17786-bf4c-4d52-b67f-6c9419de7ef6",
+          "IsActive": false,
+          "Type": "Open"
+        },
+        {
+          "EntityId": "078e091f-3297-49f6-ab6b-f6b825a58813",
+          "IsActive": false,
+          "Type": "Selected"
+        },
+        {
+          "EntityId": "702ac6ff-e9b1-4007-8517-4d63150adf85",
+          "IsActive": false,
+          "Type": "Selected"
+        },
+        {
+          "EntityId": "9b113523-a025-4446-ad99-1b5456396a36",
+          "IsActive": false,
+          "Type": "Selected"
+        },
+        {
+          "EntityId": "d7712907-1794-4816-956f-7f722268dfb4",
+          "IsActive": false,
+          "Type": "Open"
+        },
+        {
+          "EntityId": "92bd700f-7920-49d2-85ab-26b8da81826f",
+          "IsActive": false,
+          "Type": "Selected"
+        },
+        {
+          "EntityId": "6c2913b0-730e-48d7-8249-631947cd9fc5",
+          "IsActive": false,
+          "Type": "Selected"
+        },
+        {
+          "EntityId": "411508e3-f1d0-47ab-a63d-9cdb0ffc560c",
+          "IsActive": false,
+          "Type": "Selected"
+        },
+        {
+          "EntityId": "c72101cc-02ae-466d-bce7-4b98834292ec",
+          "IsActive": false,
+          "Type": "Open"
+        },
+        {
+          "EntityId": "3e889dfb-121b-44ae-9345-50df055eac78",
+          "IsActive": false,
+          "Type": "Selected"
+        },
+        {
+          "EntityId": "21476ad6-1c03-453c-b2ba-61e9ec3a66cc",
+          "IsActive": false,
+          "Type": "Open"
+        },
+        {
+          "EntityId": "67bfd893-9816-4c56-87d4-24635fb3f8dd",
+          "IsActive": false,
+          "Type": "Open"
+        },
+        {
+          "EntityId": "67ea0572-b57c-4d16-a120-7ee75cf96679",
+          "IsActive": false,
+          "Type": "Selected"
+        },
+        {
+          "EntityId": "2385637e-24ff-4836-ba66-3e83df7a482b",
+          "IsActive": false,
+          "Type": "Open"
+        },
+        {
+          "EntityId": "dae5d641-0e0a-4f6f-91c8-b823b6f28df8",
+          "IsActive": false,
+          "Type": "Open"
+        },
+        {
+          "EntityId": "6ba99d08-c411-4545-88f1-fdf5413013b7",
+          "IsActive": false,
+          "Type": "Selected"
+        },
+        {
+          "EntityId": "39ad7d4c-d53a-4d32-931b-1bcccc231a7a",
+          "IsActive": false,
+          "Type": "Open"
+        },
+        {
+          "EntityId": "af348d87-33f4-45ec-820b-66307b147aea",
+          "IsActive": false,
+          "Type": "Open"
+        },
+        {
+          "EntityId": "3ff30ca1-abbe-49e1-ac17-a4c6001974fb",
+          "IsActive": false,
+          "Type": "Open"
+        },
+        {
+          "EntityId": "8fe08dbc-b2e7-49c1-827f-ed241f6e4fb5",
+          "IsActive": false,
+          "Type": "Selected"
+        },
+        {
+          "EntityId": "c91e278b-cee9-4fce-82b0-127ae35bda2c",
+          "IsActive": false,
+          "Type": "Selected"
+        },
+        {
+          "EntityId": "5f8a5758-60ea-4840-917f-6ce659781c68",
+          "IsActive": false,
+          "Type": "Selected"
+        },
+        {
+          "EntityId": "57d96153-c01f-45f1-9502-5fc1c120c8f0",
+          "IsActive": false,
+          "Type": "Selected"
+        },
+        {
+          "EntityId": "5e98f801-41c8-4d04-a1f7-8a9a6942331a",
+          "IsActive": false,
+          "Type": "Open"
+        },
+        {
+          "EntityId": "new",
+          "IsActive": false,
+          "Type": "Selected"
+        },
+        {
+          "EntityId": "f95c7c8d-7c6e-4c8c-a467-cbe44c39144b",
+          "IsActive": false,
+          "Type": "Selected"
+        },
+        {
+          "EntityId": "321cfe5e-7ecc-431e-ab7e-6f7ffb4e6500",
+          "IsActive": false,
+          "Type": "Open"
+        },
+        {
+          "EntityId": "1c8dc315-f7a5-4c1f-98dd-0fedac72cd80",
+          "IsActive": true,
+          "Type": "Open"
+        }
+      ]
+    }
+  },
+  "DrawingView": "aac1cb27-3cf3-475e-88d9-c9473cbdac87",
+  "Fabric": "assetsfabric",
+  "UserPinnedTabs": "[\r\n  {\r\n    \"source\": \"Capability_Bar_Ideas_Icon_Idle.svg\",\r\n    \"activeSource\": \"Capability_Bar_Ideas_Icon_Hover.svg\",\r\n    \"routerLink\": \"/drawingsfabric/entities\",\r\n    \"id\": \"drawings\",\r\n    \"routerLinkActive\": false,\r\n    \"title\": \"Drawings\",\r\n    \"isRouter\": true\r\n  },\r\n  {\r\n    \"source\": \"Capability_Bar_OF_Icon_Idle.svg\",\r\n    \"activeSource\": \"Capability_Bar_OF_Icon_Hover.svg\",\r\n    \"routerLink\": \"/assetsfabric/entities\",\r\n    \"id\": \"oForm\",\r\n    \"routerLinkActive\": false,\r\n    \"title\": \"Operational Form\",\r\n    \"isRouter\": true\r\n  },\r\n  {\r\n    \"source\": \"Capability_Bar_People_Icon_Idle.svg\",\r\n    \"activeSource\": \"Capability_Bar_People_Icon_Hover.svg\",\r\n    \"routerLink\": \"/peoplefabric/entities\",\r\n    \"id\": \"people\",\r\n    \"routerLinkActive\": false,\r\n    \"title\": \"People\",\r\n    \"isRouter\": true\r\n  }\r\n]"
+}"

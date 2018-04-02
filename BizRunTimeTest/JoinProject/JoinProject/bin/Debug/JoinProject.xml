@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JoinProject</name>
+    </assembly>
+    <members>
+        <member name="T:JoinProject.Program">
+            <summary>
+            This clas is having all the implementation of Inner join, left outer join, Right outer join, and full join.
+            </summary>
+        </member>
+        <member name="M:JoinProject.Program.OpenConnection">
+            <summary>
+            Using this method we will be able to onen connection to the DB.Then only we will be able to perform any operation
+            </summary>
+        </member>
+        <member name="M:JoinProject.Program.InnerJoin">
+            <summary>
+            This method will be able to perform oepration of Inner join only.
+            </summary>
+        </member>
+        <member name="M:JoinProject.Program.SelfJoin">
+            <summary>
+            This method will be able to perform operation of self join.
+            </summary>
+        </member>
+        <member name="M:JoinProject.Program.LeftOuterJoin">
+            <summary>
+            This method will be able to perform operation of Left outer join.
+            </summary>
+        </member>
+        <member name="M:JoinProject.Program.RightOuterJoin">
+            <summary>
+            This method will be able to perform operation of Right outer join.
+            </summary>
+        </member>
+        <member name="M:JoinProject.Program.FullOuterJoin">
+            <summary>
+            This method will be able to perform operation of Full outer join.
+            </summary>
+        </member>
+        <member name="M:JoinProject.Program.Main(System.String[])">
+            <summary>
+            This Main method is the entry point of the whole application.which take an argument of string type.
+            </summary>
+        </member>
+    </members>
+</doc>

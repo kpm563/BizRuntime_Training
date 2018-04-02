@@ -1,0 +1,11 @@
+E:\BizRunTimeTest\JoinProject\JoinProject\bin\Debug\JoinProject.exe.config
+E:\BizRunTimeTest\JoinProject\JoinProject\bin\Debug\JoinProject.xml
+E:\BizRunTimeTest\JoinProject\JoinProject\bin\Debug\JoinProject.exe
+E:\BizRunTimeTest\JoinProject\JoinProject\bin\Debug\JoinProject.pdb
+E:\BizRunTimeTest\JoinProject\JoinProject\bin\Debug\log4net.dll
+E:\BizRunTimeTest\JoinProject\JoinProject\bin\Debug\log4net.xml
+E:\BizRunTimeTest\JoinProject\JoinProject\obj\Debug\JoinProject.csprojResolveAssemblyReference.cache
+E:\BizRunTimeTest\JoinProject\JoinProject\obj\Debug\JoinProject.csproj.CoreCompileInputs.cache
+E:\BizRunTimeTest\JoinProject\JoinProject\obj\Debug\JoinProject.csproj.CopyComplete
+E:\BizRunTimeTest\JoinProject\JoinProject\obj\Debug\JoinProject.exe
+E:\BizRunTimeTest\JoinProject\JoinProject\obj\Debug\JoinProject.pdb

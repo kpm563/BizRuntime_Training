@@ -1,0 +1,7 @@
+E:\BizRunTimeTest\GateProject\GateProject\bin\Debug\GateProject.exe.config
+E:\BizRunTimeTest\GateProject\GateProject\bin\Debug\GateProject.exe
+E:\BizRunTimeTest\GateProject\GateProject\bin\Debug\GateProject.pdb
+E:\BizRunTimeTest\GateProject\GateProject\obj\Debug\GateProject.csprojResolveAssemblyReference.cache
+E:\BizRunTimeTest\GateProject\GateProject\obj\Debug\GateProject.csproj.CoreCompileInputs.cache
+E:\BizRunTimeTest\GateProject\GateProject\obj\Debug\GateProject.exe
+E:\BizRunTimeTest\GateProject\GateProject\obj\Debug\GateProject.pdb

@@ -1,0 +1,11 @@
+E:\BizRunTimeTest\WebApp\WebApp\bin\Debug\netcoreapp2.0\WebApp.deps.json
+E:\BizRunTimeTest\WebApp\WebApp\bin\Debug\netcoreapp2.0\WebApp.runtimeconfig.json
+E:\BizRunTimeTest\WebApp\WebApp\bin\Debug\netcoreapp2.0\WebApp.runtimeconfig.dev.json
+E:\BizRunTimeTest\WebApp\WebApp\bin\Debug\netcoreapp2.0\WebApp.dll
+E:\BizRunTimeTest\WebApp\WebApp\obj\Debug\netcoreapp2.0\WebApp.csprojResolveAssemblyReference.cache
+E:\BizRunTimeTest\WebApp\WebApp\obj\Debug\netcoreapp2.0\WebApp.csproj.CoreCompileInputs.cache
+E:\BizRunTimeTest\WebApp\WebApp\obj\Debug\netcoreapp2.0\WebApp.AssemblyInfoInputs.cache
+E:\BizRunTimeTest\WebApp\WebApp\obj\Debug\netcoreapp2.0\WebApp.AssemblyInfo.cs
+E:\BizRunTimeTest\WebApp\WebApp\bin\Debug\netcoreapp2.0\WebApp.pdb
+E:\BizRunTimeTest\WebApp\WebApp\obj\Debug\netcoreapp2.0\WebApp.dll
+E:\BizRunTimeTest\WebApp\WebApp\obj\Debug\netcoreapp2.0\WebApp.pdb
