@@ -1,0 +1,8 @@
+E:\BizRunTime_C#\EntityCRUDCore\EntityCRUDCore\bin\Debug\netcoreapp2.0\EntityCRUDCore.deps.json
+E:\BizRunTime_C#\EntityCRUDCore\EntityCRUDCore\bin\Debug\netcoreapp2.0\EntityCRUDCore.runtimeconfig.json
+E:\BizRunTime_C#\EntityCRUDCore\EntityCRUDCore\bin\Debug\netcoreapp2.0\EntityCRUDCore.runtimeconfig.dev.json
+E:\BizRunTime_C#\EntityCRUDCore\EntityCRUDCore\bin\Debug\netcoreapp2.0\EntityCRUDCore.dll
+E:\BizRunTime_C#\EntityCRUDCore\EntityCRUDCore\obj\Debug\netcoreapp2.0\EntityCRUDCore.csprojResolveAssemblyReference.cache
+E:\BizRunTime_C#\EntityCRUDCore\EntityCRUDCore\obj\Debug\netcoreapp2.0\EntityCRUDCore.csproj.CoreCompileInputs.cache
+E:\BizRunTime_C#\EntityCRUDCore\EntityCRUDCore\obj\Debug\netcoreapp2.0\EntityCRUDCore.AssemblyInfoInputs.cache
+E:\BizRunTime_C#\EntityCRUDCore\EntityCRUDCore\obj\Debug\netcoreapp2.0\EntityCRUDCore.AssemblyInfo.cs
