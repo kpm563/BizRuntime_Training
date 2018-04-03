@@ -20,8 +20,6 @@ namespace WebApp.Models
 
         [Required(ErrorMessage = "Password Required!")]
         [DataType(DataType.Password)]
-        [RegularExpression(@"(?=.*\d)(?=.*[@ $ # & * ]{2})(?=.*[A-Z])(?=.*[a-z]).{8,12}$", ErrorMessage =
-            "Enter a valid Password")]
         public string Password { get; set; }
 
         [Required(ErrorMessage = "Mobile required!")]
@@ -50,24 +48,24 @@ namespace WebApp.Models
 
         public void AddUser(Registration user)
         {
-            using (SqlConnection con = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string str = "insert into UserRecord (UserName,Email,Password,Phone,Address) values('" + user.Name + "','" + user.Email + "','" + user.Password + "','" + user.Mobile + "','" + user.Address + "')";
-                SqlCommand cmd = new SqlCommand(str, con);
+                string ConString = "INSERT INTO Details (UserName, Email, Password, Phone, Address) VALUES('" + user.Name + "','" + user.Email + "','" + user.Password + "','" + user.Mobile + "','" + user.Address + "')";
+                SqlCommand command = new SqlCommand(ConString, connection);
 
-                con.Open();
-                cmd.ExecuteNonQuery();
-                con.Close();
+                connection.Open();
+                command.ExecuteNonQuery();
+                connection.Close();
             }
         }
 
         public bool LoginUser(Login user)
         {
-            using (SqlConnection con = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                SqlCommand cmd = new SqlCommand("select * from UserRecord where UserName='" + user.UserName + "' and Password='" + user.Password + "'", con);
-                con.Open();
-                SqlDataReader rdr = cmd.ExecuteReader();
+                SqlCommand command = new SqlCommand("select * from UserRecord where UserName='" + user.UserName + "' and Password='" + user.Password + "'", connection);
+                connection.Open();
+                SqlDataReader rdr = command.ExecuteReader();
 
                 while (rdr.Read())
                 {

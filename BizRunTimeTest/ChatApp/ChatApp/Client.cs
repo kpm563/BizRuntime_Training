@@ -80,7 +80,7 @@ namespace ChatApp
                 Array.Resize(ref Buf, rec);
                 string dis = Encoding.Default.GetString(Buf);
                 Console.WriteLine(dis + " Connected.....");
-                Console.Write("Enter Name U want To Connect '|':");
+                Console.Write("Enter Message U want To Connect:");
                 string conn = Console.ReadLine();
                 send = Encoding.Default.GetBytes(conn);
                 socket.Send(send, 0, send.Length, 0);

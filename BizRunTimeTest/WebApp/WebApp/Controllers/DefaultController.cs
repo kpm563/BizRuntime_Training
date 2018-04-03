@@ -29,6 +29,12 @@ namespace WebApp.Controllers
             return View();
         }
 
+        [HttpGet]
+        public IActionResult Home()
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
             return View();

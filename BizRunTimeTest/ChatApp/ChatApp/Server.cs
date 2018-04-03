@@ -73,9 +73,7 @@ namespace ChatApp
         private string name;
         Socket socket;
         bool isLoggedIn;
-        string[] values;
-        string option;
-        static ClientHandler handler;
+        string option;        
         Dictionary<string, ClientHandler> dictionarySockets;
 
 

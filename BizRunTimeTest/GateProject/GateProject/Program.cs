@@ -4,9 +4,9 @@ namespace GateProject
 {
     class Program
     {
-        static void Call()
+        static void ShowOpenGates()
         {
-            Console.WriteLine("Open Door");
+            Console.WriteLine("Open Doors are :: ");
             Boolean[] doors = new Boolean[100];
 
             for (int i = 0; i < 100; i++)
@@ -35,7 +35,7 @@ namespace GateProject
 
         static void Main(string[] args)
         {
-            Call();
+            ShowOpenGates();
             Console.ReadKey();
         }
     }
