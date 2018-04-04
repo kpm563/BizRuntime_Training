@@ -1,0 +1,142 @@
+ "ConnectionStrings": {
+    "conn": "Data Source=.\\SQLSERVER;Initial Catalog=BizRuntime;Persist Security Info=True;User ID=sa;Password=prince"
+  },
+
+
+
+
+
+  PM> add-migration personMigration
+Both Entity Framework Core and Entity Framework 6 are installed. The Entity Framework Core tools are running. Use 'EntityFramework\Add-Migration' for Entity Framework 6.
+Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[0]
+      User profile is available. Using 'C:\Users\kpm56\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+To undo this action, use Remove-Migration.
+
+
+PM> update-database -verbose
+Both Entity Framework Core and Entity Framework 6 are installed. The Entity Framework Core tools are running. Use 'EntityFramework\Update-Database' for Entity Framework 6.
+Using project 'EntityCRUDCore'.
+Using startup project 'EntityCRUDCore'.
+Build started...
+Build succeeded.
+C:\Program Files\dotnet\dotnet.exe exec --depsfile E:\BizRunTime_C#\EntityCRUDCore\EntityCRUDCore\bin\Debug\netcoreapp2.0\EntityCRUDCore.deps.json --additionalprobingpath C:\Users\kpm56\.nuget\packages --additionalprobingpath "C:\Program Files (x86)\Microsoft SDKs\NuGetPackagesFallback" --additionalprobingpath "C:\Program Files\dotnet\sdk\NuGetFallbackFolder" --runtimeconfig E:\BizRunTime_C#\EntityCRUDCore\EntityCRUDCore\bin\Debug\netcoreapp2.0\EntityCRUDCore.runtimeconfig.json "C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.entityframeworkcore.tools\2.0.2\tools\netcoreapp2.0\ef.dll" database update --verbose --no-color --prefix-output --assembly E:\BizRunTime_C#\EntityCRUDCore\EntityCRUDCore\bin\Debug\netcoreapp2.0\EntityCRUDCore.dll --startup-assembly E:\BizRunTime_C#\EntityCRUDCore\EntityCRUDCore\bin\Debug\netcoreapp2.0\EntityCRUDCore.dll --project-dir E:\BizRunTime_C#\EntityCRUDCore\EntityCRUDCore\ --root-namespace EntityCRUDCore
+Using assembly 'EntityCRUDCore'.
+Using startup assembly 'EntityCRUDCore'.
+Using application base 'E:\BizRunTime_C#\EntityCRUDCore\EntityCRUDCore\bin\Debug\netcoreapp2.0'.
+Using working directory 'E:\BizRunTime_C#\EntityCRUDCore\EntityCRUDCore'.
+Using root namespace 'EntityCRUDCore'.
+Using project directory 'E:\BizRunTime_C#\EntityCRUDCore\EntityCRUDCore\'.
+Finding DbContext classes...
+Finding IDesignTimeDbContextFactory implementations...
+Finding application service provider...
+Finding BuildWebHost method...
+Using environment 'Development'.
+Using application service provider from BuildWebHost method on 'Program'.
+Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[0]
+      User profile is available. Using 'C:\Users\kpm56\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+Finding DbContext classes in the project...
+Found DbContext 'DataContext'.
+Using context 'DataContext'.
+Finding design-time services for provider 'Microsoft.EntityFrameworkCore.SqlServer'...
+Using design-time services from provider 'Microsoft.EntityFrameworkCore.SqlServer'.
+Finding IDesignTimeServices implementations in assembly 'EntityCRUDCore'...
+No design-time services were found.
+Migrating using database 'PersonDb' on server '.\SQLSERVER'.
+Opening connection to database 'PersonDb' on server '.\SQLSERVER'.
+An error occurred using the connection to database 'PersonDb' on server '.\SQLSERVER'.
+Opening connection to database 'PersonDb' on server '.\SQLSERVER'.
+An error occurred using the connection to database 'PersonDb' on server '.\SQLSERVER'.
+Opening connection to database 'master' on server '.\SQLSERVER'.
+Opened connection to database 'master' on server '.\SQLSERVER'.
+Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='60']
+CREATE DATABASE [PersonDb];
+Executed DbCommand (977ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+CREATE DATABASE [PersonDb];
+Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5 EXEC(N'ALTER DATABASE [PersonDb] SET READ_COMMITTED_SNAPSHOT ON;');
+Executed DbCommand (379ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5 EXEC(N'ALTER DATABASE [PersonDb] SET READ_COMMITTED_SNAPSHOT ON;');
+Closing connection to database 'master' on server '.\SQLSERVER'.
+Closed connection to database 'master' on server '.\SQLSERVER'.
+Opening connection to database 'PersonDb' on server '.\SQLSERVER'.
+Opened connection to database 'PersonDb' on server '.\SQLSERVER'.
+Closing connection to database 'PersonDb' on server '.\SQLSERVER'.
+Closed connection to database 'PersonDb' on server '.\SQLSERVER'.
+Opening connection to database 'PersonDb' on server '.\SQLSERVER'.
+Opened connection to database 'PersonDb' on server '.\SQLSERVER'.
+Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+Executed DbCommand (505ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+Closing connection to database 'PersonDb' on server '.\SQLSERVER'.
+Closed connection to database 'PersonDb' on server '.\SQLSERVER'.
+Opening connection to database 'PersonDb' on server '.\SQLSERVER'.
+Opened connection to database 'PersonDb' on server '.\SQLSERVER'.
+Closing connection to database 'PersonDb' on server '.\SQLSERVER'.
+Closed connection to database 'PersonDb' on server '.\SQLSERVER'.
+Opening connection to database 'PersonDb' on server '.\SQLSERVER'.
+Opened connection to database 'PersonDb' on server '.\SQLSERVER'.
+Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+Executed DbCommand (76ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+Closing connection to database 'PersonDb' on server '.\SQLSERVER'.
+Closed connection to database 'PersonDb' on server '.\SQLSERVER'.
+Opening connection to database 'PersonDb' on server '.\SQLSERVER'.
+Opened connection to database 'PersonDb' on server '.\SQLSERVER'.
+Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+Executed DbCommand (42ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+A data reader was disposed.
+Closing connection to database 'PersonDb' on server '.\SQLSERVER'.
+Closed connection to database 'PersonDb' on server '.\SQLSERVER'.
+Applying migration '20180404071118_personMigration'.
+Opening connection to database 'PersonDb' on server '.\SQLSERVER'.
+Opened connection to database 'PersonDb' on server '.\SQLSERVER'.
+Beginning transaction with isolation level 'ReadCommitted'.
+Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Person] (
+    [Id] int NOT NULL IDENTITY,
+    [City] nvarchar(max) NOT NULL,
+    [Country] nvarchar(max) NOT NULL,
+    [Email] nvarchar(max) NOT NULL,
+    [Gender] nvarchar(max) NOT NULL,
+    [Mobile] nvarchar(10) NOT NULL,
+    [Name] nvarchar(30) NOT NULL,
+    CONSTRAINT [PK_Person] PRIMARY KEY ([Id])
+);
+Executed DbCommand (151ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Person] (
+    [Id] int NOT NULL IDENTITY,
+    [City] nvarchar(max) NOT NULL,
+    [Country] nvarchar(max) NOT NULL,
+    [Email] nvarchar(max) NOT NULL,
+    [Gender] nvarchar(max) NOT NULL,
+    [Mobile] nvarchar(10) NOT NULL,
+    [Name] nvarchar(30) NOT NULL,
+    CONSTRAINT [PK_Person] PRIMARY KEY ([Id])
+);
+Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20180404071118_personMigration', N'2.0.2-rtm-10011');
+Executed DbCommand (181ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20180404071118_personMigration', N'2.0.2-rtm-10011');
+Committing transaction.
+Disposing transaction.
+Closing connection to database 'PersonDb' on server '.\SQLSERVER'.
+Closed connection to database 'PersonDb' on server '.\SQLSERVER'.
+Done.
