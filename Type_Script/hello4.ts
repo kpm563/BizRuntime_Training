@@ -1,0 +1,10 @@
+let v1 = 'abc';
+let v2 = "hello";
+let v3 : string;
+v3 = "xyz";
+let v4;
+v4 = "test";
+console.log(v1);
+console.log(v2);
+console.log(v3);
+console.log(v4);

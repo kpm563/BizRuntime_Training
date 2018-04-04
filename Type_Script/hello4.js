@@ -1,0 +1,10 @@
+var v1 = 'abc';
+var v2 = "hello";
+var v3;
+v3 = "xyz";
+var v4;
+v4 = "test";
+console.log(v1);
+console.log(v2);
+console.log(v3);
+console.log(v4);

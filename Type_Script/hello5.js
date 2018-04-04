@@ -1,0 +1,15 @@
+var v1 = 12;
+var v2 = 5.6;
+var n3;
+var n4;
+n4 = 200;
+n4 = 'abc';
+n4 = false;
+//n1 = 'abc';
+//n2 = false;
+//n3 = "hello";
+console.log(v1);
+console.log(v2);
+console.log(n3);
+console.log(n4);
+console.log("The End");

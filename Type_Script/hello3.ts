@@ -1,0 +1,8 @@
+function test(){
+    for(let i = 1; i <= 5; i++){
+        console.log("loop body:"+i);
+    }
+    console.log("outer body:"+i);
+}
+
+test();
