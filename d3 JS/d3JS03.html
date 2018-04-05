@@ -1,0 +1,340 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>D3 JS Implementation</title>
+    <script src="d3.min.js"></script>
+    <style>
+        .error {
+            color:red;
+        }
+
+        #div05 {
+            height: 100px;
+            width: 100px;
+            background-color: steelblue;
+            margin: 5px;
+        }
+
+        #div06 {
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="div01">
+
+        <p>This is paragraph!!</p>
+        <p>This is 2nd paragraph!!</p>
+
+    </div>
+
+    <div id="div02">
+        <p></p>
+        <p><input type="checkbox" /><label>D3</label></p>
+        <p><input type="checkbox" /><label>JS</label></p>
+    </div>
+
+    <div id="div03">
+
+        <p></p>
+        <p></p>
+        <p></p>
+
+    </div>
+
+    <div id="div04">
+        <p>Error: This is an error page!!!</p>
+        <p>Warning: This is a warning page!!!</p>
+    </div>
+
+    <div id="div05"></div>
+
+    <div id="div06"></div>
+
+    <div id="div07"></div>
+
+    <div id="div08">
+
+        <p></p>
+        <p></p>
+        <p></p>
+
+    </div>
+
+    <div id="div09">
+        <p>This is a paragraph from DIV09.</p>
+    </div>
+
+    <div id="div10"></div>
+    <div id="div11"></div>
+    <div id="div12">
+        <p>This is a paragraph!!!!</p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+
+    <div id="div13">
+        <p></p>
+    </div>
+
+    <div id="div14"></div>
+
+    <div id="div15"></div>
+
+    <div id="div16"></div>
+
+
+
+
+
+    <script>
+        var dddjs = d3.select("body")
+            .select("#div01")
+            .append("p")
+            .text("This is third paragraph!!");
+
+        //select an element by id, insert something into it as text.
+        var dddjs1 = d3.select("#div02").insert("p").text("This is inserted paragraph!!!");
+
+        //var dddjs2 = d3.select("div").remove();
+
+        // select an element an add html into it
+        var dddjs3 = d3.select("#div02").select("p").html("<span>This is from html method!!!</span>");
+
+        //property method
+        var dddjs4 = d3.select("#div02").select("input").property("checked", true);
+
+        //classed method
+        var dddjs5 = d3.select("#div02").select("p").classed("error", true); // doubt
+
+        //data function
+        var dataArray = [1, 2, 3];
+        var dataArray1 = 100;
+
+        var dddjs6 = d3.select("#div03")
+            .selectAll("p")
+            .data(dataArray)
+            .text(function (d, i) {     //this text function adds the data as text to each of our selection element
+                console.log("d :: " + d);
+                console.log("i :: " + i);
+                console.log("this :: " + this);
+
+                return d;
+            });
+        // it will not perform any operation if you provide any constant.
+        var dddjs61 = d3.select("#div03")
+            .selectAll("p")
+            .data(dataArray1)
+            .text(function (d, i) {
+                return d;
+            });
+
+        //style function
+        var dddjs7 = d3.select("#div04")
+            .selectAll("p")
+            .style("color", function (d, i) {
+                var text = this.innerText;
+
+                if (text.indexOf("Error") >= 0) {
+                    return "red";
+                }
+                else if (text.indexOf("Warning") >= 0) {
+                    return "orange";
+                }
+            });
+
+
+        //on function
+        var dddjs8 = d3.selectAll("#div05")
+            .on("mouseover", function () {
+                d3.select(this)
+                    .style("background-color", "orange");
+                console.log(d3.event);
+
+                console.log(d3.mouse(this));
+            })
+            .on("click", function () {
+                d3.select(this)
+                    .style("background-color", "blue")
+            })
+            .on("mouseout", function () {
+                d3.select(this)
+                    .style("background-color", "green")
+            });
+
+
+        //transintion,duration, ease and delay function
+        var dddjs9 = d3.select("#div06")
+            .transition()
+            .duration(4000)
+            .style("background-color", "red");
+
+
+
+        var svg = d3.select("#div07")
+            .append("svg")
+            .attr("width", 500)
+            .attr("height", 500);
+
+        var bar1 = svg.append("rect")
+            .attr("fill", "blue")
+            .attr("x", 100)
+            .attr("y", 20)
+            .attr("width", 10)
+            .attr("height", 20)
+
+        var bar2 = svg.append("rect")
+            .attr("fill", "green")
+            .attr("x", 120)
+            .attr("y", 20)
+            .attr("height", 20)
+            .attr("width", 10)
+
+        update();
+
+        function update() {
+            bar1.transition()
+                .ease(d3.easeLinear)
+                .duration(4000)
+                .attr("height", 100)
+
+            bar2.transition()
+                .ease(d3.easeLinear)
+                .duration(4000)
+                .delay(2000)
+                .attr("height", 100)
+        }
+
+
+        //Join Data to Multiple Elements
+        var dataArray2 = ["Hello world!!!", "Hello D3!!!!", "Hello Java script!!!"];
+
+        var dddjs9 = d3.select("#div08")
+            .selectAll("p")
+            .data(dataArray2)
+            .text(function (d, i) {
+                return d;
+            });
+
+        //Data Binding
+        var dataArray3 = [1, 2, 3, 4, 5];
+
+        var dddjs10 = d3.select("#div09")
+            .selectAll("p")
+            .data(dataArray3)
+            .text(function (d, i) {
+                return d;
+            });
+
+        // Data Binding :: enter() Method
+
+        var dataArray4 = [10, 20, 30, 40, 50, 60];
+
+        var dddjs11 = d3.select("#div10")
+            .selectAll("span")
+            .data(dataArray4)
+            .enter()
+            .append("span")
+            .text(function (d) { return d + "  "; });
+
+        var dddjs12 = d3.select("#div11")
+            .selectAll("span")
+            .data(dataArray4)
+            .enter()
+            .append("span")
+            .style('color', function (d) {
+                if (d % 4 == 0) {
+                    return "green";
+                }
+                else {
+                    return "red";
+                }
+            })
+            .text(function (d) { return d + "  "; });
+
+
+        // Data Binding :: exit() function and remove() function
+        var dddjs13 = d3.select("#div12")
+            .selectAll("p")
+            .data(dataArray4)
+            .text(function (d, i) {
+                return d;
+            })
+            .exit()
+            .remove();
+
+
+        //Data binding :: datum() method
+        var dddjs14 = d3.select("#div13")
+            .select("p")
+            .datum(100)
+            .text(function (d, i) {
+                return d;
+            });
+
+        ////Loading CSV Data    //Doubt
+
+        //var dddjs15 = d3.csv("Employee.csv", function (data) {
+        //    for (var i = 0; i < data.length; i++) {
+        //        console.log(data[i].Name);
+        //        console.log(data[i].Age);
+        //    }
+        //});
+
+
+
+        // json() function  
+
+        //var dddjs16 = d3.json("data.json", function (data) {
+        //    console.log(data);
+        //});
+
+        //var dddjs17 = d3.json("users.json", function (error, data) {
+
+        //    if (error) {
+        //        return console.warn(error);
+        //    }
+
+        //    d3.select("#div15")
+        //        .selectAll("p")
+        //        .data(data)
+        //        .enter()
+        //        .append("p")
+        //        .text(function (d) {
+        //            return d.name + ",  " + d.location;
+        //        });
+        //});
+
+
+        //SVG in D3 JS
+
+        var width = 500;
+        var height = 500;
+
+        var svg = d3.select("#div16")
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+        svg.append("line")
+            .attr("x1", 100)
+            .attr("x2", 500)
+            .attr("y1", 50)
+            .attr("y2", 50)
+            .attr("stroke", "blue");
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>
