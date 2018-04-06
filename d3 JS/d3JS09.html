@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>D3 JS Implementation</title>
+    <script src="d3.min.js"></script>
+</head>
+<body>
+
+
+    <script>
+
+         // Axis implementation
+
+        //axisLeft()
+
+        var width = 400, height = 400;
+
+        var data = [10, 15, 20, 25, 30];
+        var svg = d3.select("body")
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+        var scale = d3.scaleLinear()
+            .domain([d3.min(data), d3.max(data)])
+            .range([height / 2, 0]);
+
+        var y_axis = d3.axisLeft()
+            .scale(scale);
+
+        svg.append("g")
+            .attr("transform", "translate(50, 10)")
+            .call(y_axis);
+
+    </script>
+
+</body>
+</html>

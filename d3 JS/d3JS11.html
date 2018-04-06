@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>D3 JS Implementation</title>
+    <script src="d3.min.js"></script>
+</head>
+<body>
+
+
+    <svg width="600" height="500"></svg>
+    <script>
+        //Bar Chart using D3      
+
+        var svg = d3.select("svg");
+        var margin = 200;
+        var width = svg.attr("width") - margin;
+        var height = svg.attr("height") - margin;
+
+
+        var xScale = d3.scaleBand().range([0, width]).padding(0.4);
+        var yScale = d3.scaleBand().range([height, 0]);
+
+        var group = svg.append("g")
+            .attr("transform", "translate(" + 100 + "," + 100 + ")");
+
+        d3.csv("XYZ.csv", function (error, data) {
+            if (error) {
+                throw error;
+            }
+
+            xScale.domain(data.map(function (d) {
+                return d.year;
+            }));
+
+            yScale.domain([0, d3.max(data, function (d) {
+                return d.value;
+            })]);
+
+
+            group.append("g")
+                .attr("transform", "translate(0," + height + ")")
+                .call(d3.axisBottom(xScale));
+
+
+            group.append("g")
+                .call(d3.axisLeft(yScale).thickFormat(function (d) { return "$" + d; }).ticks(10))
+                .append("text")
+                .attr("y", 6)
+                .attr("dy", "0.71em")
+                .attr("text-anchor", "end")
+                .text("value");
+        });
+      
+
+
+    </script>
+
+
+
+</body>
+</html>
