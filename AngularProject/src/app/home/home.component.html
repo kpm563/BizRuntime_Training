@@ -1,0 +1,27 @@
+<ng-content></ng-content>
+
+<h4>{{homeTitle}}</h4>
+
+<p>
+  home works!
+</p>
+
+<input value="{{name}}"/>
+<input value="{{city}}"/>
+<input value="{{age}}"/>
+<input value="{{gender}}"/>
+
+<button (click) = "alertMe();">Click me</button>
+<br/>
+<br/>
+
+
+
+<input [(ngModel)] = "employee.fname"/>
+<input [(ngModel)] = "employee.address"/>
+
+<p>{{employee.fname}}</p>
+<p>{{employee.address}}</p>
+
+
+
