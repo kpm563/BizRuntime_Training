@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Observable} from 'rxjs/Observable';
-import 'rxjs/Rx';
+import * as d3 from 'd3';
 
 
 @Component({
@@ -10,15 +10,15 @@ import 'rxjs/Rx';
 })
 export class ObservablesComponent implements OnInit {
 
-  private data:any;  
+  private data:any;
 
-  constructor() { 
+  constructor() {
 
    this.data = new Observable(observer=>{
     setTimeout(()=>{
       observer.next(21);
     },2000);
-    
+
     setTimeout(()=>{
       observer.next(22);
     },2000);

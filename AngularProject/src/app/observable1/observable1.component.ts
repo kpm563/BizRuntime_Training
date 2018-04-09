@@ -12,22 +12,22 @@ import { ViewChild } from '@angular/core';
 export class Observable1Component implements OnInit {
 
   @ViewChild('input' ) input: ElementRef;
-  constructor(private data:ElementRef) { 
+  constructor(private data:ElementRef) {
 
   let input = document.querySelector('input');
-    
-   let observable1 = Observable.fromEvent(this.data.nativeElement as any, 'input');
 
-   let subscriber1 = observable1.map(event=>event)
+  let observable1 = Observable.fromEvent(this.data.nativeElement as any, 'input');
+
+  let subscriber1 = observable1.map(event=>event)
                     .debounceTime(500)
                     .distinctUntilChanged()
                     .subscribe((event)=>{
                       //console.log(this.input.nativeElement);
-                      console.log(this.data.nativeElement.querySelector('#page'));
-                     const data1 = this.data.nativeElement.querySelector('#page');
-                     data1.innerHTML = event.target.value;
+                    //console.log(this.data.nativeElement.querySelector('#page'));
+                    //const data1 = this.data.nativeElement.querySelector('#page');
+                    //data1.innerHTML = event.target.value;
                     }
-                    );
+                  );
 
   }
 

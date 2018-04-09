@@ -12,7 +12,16 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { ClusterComponent } from './cluster/cluster.component';
 import { Observable1Component } from './observable1/observable1.component';
 
+import {ExampleService} from './service/service.services';
+
 import {FormsModule} from '@angular/forms';
+import { EasingComponent } from './easing/easing.component';
+import { PiechartComponent } from './piechart/piechart.component';
+import { ServiceComponent } from './service/service.component';
+import { BarchartComponent } from './barchart/barchart.component';
+import { TreeComponent } from './tree/tree.component';
+import {HttpModule} from '@angular/http';
+
 
 
 @NgModule({
@@ -22,14 +31,14 @@ import {FormsModule} from '@angular/forms';
     RegistrationComponent,
     ObservablesComponent,
     ObservablesHttpComponent,
-    DataBindingComponent,    
-    ClusterComponent, Observable1Component
+    DataBindingComponent,
+    ClusterComponent, Observable1Component, EasingComponent, PiechartComponent, ServiceComponent, BarchartComponent, TreeComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,HttpModule,
     routes,FormsModule
   ],
-  providers: [],
+  providers: [ExampleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
