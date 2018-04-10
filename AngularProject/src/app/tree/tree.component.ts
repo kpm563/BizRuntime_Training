@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import * as d3 from 'd3';
 //import { jsonServices } from './json.service';
+import{Http, Response, Headers} from '@angular/http';
+import 'rxjs/add/operator/toPromise';
 
 
 @Component({
@@ -21,10 +23,11 @@ export class TreeComponent implements OnInit {
   private duration :any;
   private root:any;
   private nodes :any;
-  private index:number;
+  private index:any;
   private node:any;
   private nodeEnter :any;
   private link:any;
+  private flare:object;
 
 
   private createCollapsibleTree(){
@@ -45,14 +48,25 @@ export class TreeComponent implements OnInit {
       .append("g")
       .attr("transform", "translate(" + this.margin.left + "," + this.margin.top + ")");
 
-    d3.json("flare.json", function(error, flare) {
-      if (error) throw error;
+    // d3.json("assets/flare.json", function(error, flare) {
+    //   if (error) throw error;
 
-      this.root = d3.hierarchy(flare);
-      this.root.x0 = 0;
-      this.root.y0 = 0;
-      this.update(this.root);
-    });
+    //   this.root = d3.hierarchy(flare);
+    //   this.root.x0 = 0;
+    //   this.root.y0 = 0;
+    //   this.update(this.root);
+    // });
+
+    this.http.get("assets/flare.json").subscribe(
+      (res:Response)=> {
+        this.flare=res.json();
+        this.root = d3.hierarchy(this.flare);
+        this.root.x0 = 0;
+        this.root.y0 = 0;
+        this.update(this.root);
+      }
+    );
+
   }
 
   
@@ -71,7 +85,7 @@ export class TreeComponent implements OnInit {
     // Compute the "layout"
     this.index = -1;
     this.root.eachBefore(function(n) {
-      n.x = ++this.index * this.barHeight;
+      n.x = ++(this.index) * this.barHeight;
       n.y = n.depth * 20;
     });
 
@@ -172,7 +186,7 @@ export class TreeComponent implements OnInit {
   }
 
 
-  constructor() { }
+  constructor(private http:Http) { }
 
   ngOnInit() {
 

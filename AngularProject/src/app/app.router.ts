@@ -13,6 +13,10 @@ import {PiechartComponent} from './piechart/piechart.component';
 import {ServiceComponent} from './service/service.component';
 import {BarchartComponent} from './barchart/barchart.component';
 import {TreeComponent} from './tree/tree.component';
+import{CrudComponent} from './crud/crud.component';
+import {CrudproductComponent} from './crudproduct/crudproduct.component';
+import {CrudUpdateComponent} from './crud-update/crud-update.component';
+
 
 
 export const router: Routes = [
@@ -27,7 +31,11 @@ export const router: Routes = [
     {path:'piechart', component:PiechartComponent},
     {path:'services', component:ServiceComponent},
     {path:'barchart', component:BarchartComponent},
-    {path:'tree', component:TreeComponent}
+    {path:'tree', component:TreeComponent},
+    {path:'crud', component:CrudComponent},
+    {path:'crudproduct', component:CrudproductComponent},
+    {path:'crudupdate/:id', component:CrudUpdateComponent},
+    
 ];
 
 export const routes : ModuleWithProviders=RouterModule.forRoot(router);

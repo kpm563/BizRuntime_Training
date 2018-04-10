@@ -1,0 +1,24 @@
+a{
+    font-size: 30px;
+    color: blueviolet;
+}
+
+form, label, input{    
+    font-size: 30px;
+    padding: 10px;
+}
+
+input{
+    margin-top: 10px;
+}
+
+a:hover{
+    cursor: pointer;
+    color: blueviolet;
+}
+
+table, th, td{
+    border:1px solid black;
+    font-size: 30px;
+    padding: 10px;
+}

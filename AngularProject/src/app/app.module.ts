@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { ObservablesComponent } from './observables/observables.component';
-import { ObservablesHttpComponent } from './observables-http/observables-http.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { ClusterComponent } from './cluster/cluster.component';
 import { Observable1Component } from './observable1/observable1.component';
@@ -21,6 +20,10 @@ import { ServiceComponent } from './service/service.component';
 import { BarchartComponent } from './barchart/barchart.component';
 import { TreeComponent } from './tree/tree.component';
 import {HttpModule} from '@angular/http';
+import { CrudComponent } from './crud/crud.component';
+import { CrudproductComponent } from './crudproduct/crudproduct.component';
+import { CrudUpdateComponent } from './crud-update/crud-update.component';
+
 
 
 
@@ -30,9 +33,17 @@ import {HttpModule} from '@angular/http';
     HomeComponent,
     RegistrationComponent,
     ObservablesComponent,
-    ObservablesHttpComponent,
     DataBindingComponent,
-    ClusterComponent, Observable1Component, EasingComponent, PiechartComponent, ServiceComponent, BarchartComponent, TreeComponent
+    ClusterComponent, 
+    Observable1Component, 
+    EasingComponent, 
+    PiechartComponent, 
+    ServiceComponent, 
+    BarchartComponent, 
+    TreeComponent, 
+    CrudComponent, 
+    CrudproductComponent, 
+    CrudUpdateComponent
   ],
   imports: [
     BrowserModule,HttpModule,

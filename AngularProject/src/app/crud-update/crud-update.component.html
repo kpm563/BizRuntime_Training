@@ -1,0 +1,14 @@
+<a routerLink = '/crud'> Back to List</a>
+
+<h2>Update product</h2>
+<form id="fromNewProduct" name="fromNewProduct" #productData = "ngForm" (ngSubmit) = "updateProduct(productData.value)">
+  <label>Name: </label> <input type="text" name="name" id="name" placeholder="name" [(ngModel)] = "data.name" ngModel><br>
+  <label>Color: </label> <input type="text" name="color" id="color" [(ngModel)] = "data.color" placeholder="name" ngModel><br>
+  <input type="submit" value="Update product">
+</form>
+
+
+<br>
+<h3 *ngIf="isAdded">{{confirmationString}}</h3>
+<br>
+<p style="font-size: 30px" *ngIf = "!exist">Product does not exist!></p>
