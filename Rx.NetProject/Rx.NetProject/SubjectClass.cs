@@ -5,6 +5,11 @@ namespace Rx.NetProject
 {
     class SubjectClass
     {
+        static void WriteSequenceToConsole(IObservable<string> sequence)
+        {
+            sequence.Subscribe(value => Console.WriteLine(value));
+        }
+
         public void SubjectMethod()
         {
             var subject = new Subject<string>();
@@ -92,10 +97,7 @@ namespace Rx.NetProject
             subject.OnCompleted();
         }
 
-        static void WriteSequenceToConsole(IObservable<string> sequence)
-        {
-            sequence.Subscribe(value => Console.WriteLine(value));
-        }
+       
     }
 
 
