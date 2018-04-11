@@ -16,6 +16,8 @@ import {TreeComponent} from './tree/tree.component';
 import{CrudComponent} from './crud/crud.component';
 import {CrudproductComponent} from './crudproduct/crudproduct.component';
 import {CrudUpdateComponent} from './crud-update/crud-update.component';
+import{BubblechartComponent} from './bubblechart/bubblechart.component';
+import {LifecycleComponent} from './lifecycle/lifecycle.component';
 
 
 
@@ -35,6 +37,8 @@ export const router: Routes = [
     {path:'crud', component:CrudComponent},
     {path:'crudproduct', component:CrudproductComponent},
     {path:'crudupdate/:id', component:CrudUpdateComponent},
+    {path:'bubble', component:BubblechartComponent},
+    {path:'lifecycle', component:LifecycleComponent}
     
 ];
 

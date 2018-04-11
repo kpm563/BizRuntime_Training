@@ -23,6 +23,8 @@ import {HttpModule} from '@angular/http';
 import { CrudComponent } from './crud/crud.component';
 import { CrudproductComponent } from './crudproduct/crudproduct.component';
 import { CrudUpdateComponent } from './crud-update/crud-update.component';
+import { BubblechartComponent } from './bubblechart/bubblechart.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
 
 
 
@@ -43,7 +45,7 @@ import { CrudUpdateComponent } from './crud-update/crud-update.component';
     TreeComponent, 
     CrudComponent, 
     CrudproductComponent, 
-    CrudUpdateComponent
+    CrudUpdateComponent, BubblechartComponent, LifecycleComponent
   ],
   imports: [
     BrowserModule,HttpModule,

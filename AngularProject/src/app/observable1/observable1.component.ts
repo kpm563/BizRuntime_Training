@@ -23,9 +23,10 @@ export class Observable1Component implements OnInit {
                     .distinctUntilChanged()
                     .subscribe((event)=>{
                       //console.log(this.input.nativeElement);
-                    //console.log(this.data.nativeElement.querySelector('#page'));
-                    //const data1 = this.data.nativeElement.querySelector('#page');
-                    //data1.innerHTML = event.target.value;
+                      let data3 = this.data.nativeElement.querySelector('#page');
+                    //console.log(data3);
+                    const data1 = this.data.nativeElement.querySelector('#page');
+                    data1.innerHTML = event.target.value;
                     }
                   );
 

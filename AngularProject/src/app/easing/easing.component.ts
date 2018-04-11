@@ -74,6 +74,5 @@ export class EasingComponent implements OnInit {
     circleTransition(d3.easeCircle,7);
     circleTransition(d3.easeExp,8);
     circleTransition(d3.easeBack,9);
-  }
-  
+  }  
 }
