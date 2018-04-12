@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "ServiceFabric", "ServiceFabric\ServiceFabric.sfproj", "{3EF1F9CF-E5E7-4743-A56B-2844F18210BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webapi1", "Webapi1\Webapi1.csproj", "{B842041E-0FCB-4B0F-B981-AEAC8DACB121}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EF1F9CF-E5E7-4743-A56B-2844F18210BE}.Debug|x64.ActiveCfg = Debug|x64
+		{3EF1F9CF-E5E7-4743-A56B-2844F18210BE}.Debug|x64.Build.0 = Debug|x64
+		{3EF1F9CF-E5E7-4743-A56B-2844F18210BE}.Debug|x64.Deploy.0 = Debug|x64
+		{3EF1F9CF-E5E7-4743-A56B-2844F18210BE}.Release|x64.ActiveCfg = Release|x64
+		{3EF1F9CF-E5E7-4743-A56B-2844F18210BE}.Release|x64.Build.0 = Release|x64
+		{3EF1F9CF-E5E7-4743-A56B-2844F18210BE}.Release|x64.Deploy.0 = Release|x64
+		{B842041E-0FCB-4B0F-B981-AEAC8DACB121}.Debug|x64.ActiveCfg = Debug|x64
+		{B842041E-0FCB-4B0F-B981-AEAC8DACB121}.Debug|x64.Build.0 = Debug|x64
+		{B842041E-0FCB-4B0F-B981-AEAC8DACB121}.Release|x64.ActiveCfg = Release|x64
+		{B842041E-0FCB-4B0F-B981-AEAC8DACB121}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {972B7257-F643-4166-BA6D-0D1CADC5A4C1}
+	EndGlobalSection
+EndGlobal

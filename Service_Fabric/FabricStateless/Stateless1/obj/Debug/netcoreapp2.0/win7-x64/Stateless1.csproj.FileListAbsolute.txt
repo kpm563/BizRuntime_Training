@@ -1,0 +1,14 @@
+D:\BizRunTime_CSharp\FabricStateless\Stateless1\obj\Debug\netcoreapp2.0\win7-x64\Stateless1.csproj.CoreCompileInputs.cache
+D:\BizRunTime_CSharp\FabricStateless\Stateless1\obj\Debug\netcoreapp2.0\win7-x64\Stateless1.AssemblyInfoInputs.cache
+D:\BizRunTime_CSharp\FabricStateless\Stateless1\obj\Debug\netcoreapp2.0\win7-x64\Stateless1.AssemblyInfo.cs
+D:\BizRunTime_CSharp\FabricStateless\Stateless1\bin\Debug\netcoreapp2.0\win7-x64\hostpolicy.dll
+D:\BizRunTime_CSharp\FabricStateless\Stateless1\bin\Debug\netcoreapp2.0\win7-x64\hostfxr.dll
+D:\BizRunTime_CSharp\FabricStateless\Stateless1\bin\Debug\netcoreapp2.0\win7-x64\Stateless1.exe
+D:\BizRunTime_CSharp\FabricStateless\Stateless1\bin\Debug\netcoreapp2.0\win7-x64\Stateless1.deps.json
+D:\BizRunTime_CSharp\FabricStateless\Stateless1\bin\Debug\netcoreapp2.0\win7-x64\Stateless1.runtimeconfig.json
+D:\BizRunTime_CSharp\FabricStateless\Stateless1\bin\Debug\netcoreapp2.0\win7-x64\Stateless1.runtimeconfig.dev.json
+D:\BizRunTime_CSharp\FabricStateless\Stateless1\bin\Debug\netcoreapp2.0\win7-x64\Stateless1.dll
+D:\BizRunTime_CSharp\FabricStateless\Stateless1\bin\Debug\netcoreapp2.0\win7-x64\Stateless1.pdb
+D:\BizRunTime_CSharp\FabricStateless\Stateless1\obj\Debug\netcoreapp2.0\win7-x64\Stateless1.csprojResolveAssemblyReference.cache
+D:\BizRunTime_CSharp\FabricStateless\Stateless1\obj\Debug\netcoreapp2.0\win7-x64\Stateless1.dll
+D:\BizRunTime_CSharp\FabricStateless\Stateless1\obj\Debug\netcoreapp2.0\win7-x64\Stateless1.pdb

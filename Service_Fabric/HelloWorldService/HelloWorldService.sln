@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "HelloWorldService", "HelloWorldService\HelloWorldService.sfproj", "{680195F1-6579-416B-BF83-120C9B4A52D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{A7B883EF-D63C-430E-8295-0491899D581C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{680195F1-6579-416B-BF83-120C9B4A52D2}.Debug|x64.ActiveCfg = Debug|x64
+		{680195F1-6579-416B-BF83-120C9B4A52D2}.Debug|x64.Build.0 = Debug|x64
+		{680195F1-6579-416B-BF83-120C9B4A52D2}.Debug|x64.Deploy.0 = Debug|x64
+		{680195F1-6579-416B-BF83-120C9B4A52D2}.Release|x64.ActiveCfg = Release|x64
+		{680195F1-6579-416B-BF83-120C9B4A52D2}.Release|x64.Build.0 = Release|x64
+		{680195F1-6579-416B-BF83-120C9B4A52D2}.Release|x64.Deploy.0 = Release|x64
+		{A7B883EF-D63C-430E-8295-0491899D581C}.Debug|x64.ActiveCfg = Debug|x64
+		{A7B883EF-D63C-430E-8295-0491899D581C}.Debug|x64.Build.0 = Debug|x64
+		{A7B883EF-D63C-430E-8295-0491899D581C}.Release|x64.ActiveCfg = Release|x64
+		{A7B883EF-D63C-430E-8295-0491899D581C}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C40258D4-4CC3-492A-B044-853C1FBD7471}
+	EndGlobalSection
+EndGlobal

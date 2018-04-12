@@ -1,0 +1,2 @@
+D:\BizRunTime_CSharp\HelloWorldService\HelloWorld\obj\x64\Debug\HelloWorld.csprojResolveAssemblyReference.cache
+D:\BizRunTime_CSharp\HelloWorldService\HelloWorld\obj\x64\Debug\HelloWorld.csproj.CoreCompileInputs.cache

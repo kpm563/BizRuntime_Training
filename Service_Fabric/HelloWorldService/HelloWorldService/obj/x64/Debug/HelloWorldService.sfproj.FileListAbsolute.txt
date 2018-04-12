@@ -1,0 +1,1 @@
+D:\BizRunTime_CSharp\HelloWorldService\HelloWorldService\obj\x64\Debug\HelloWorldService.sfproj.CoreCompileInputs.cache

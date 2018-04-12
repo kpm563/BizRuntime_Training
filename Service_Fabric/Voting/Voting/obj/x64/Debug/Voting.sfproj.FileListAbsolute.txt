@@ -1,0 +1,2 @@
+D:\BizRunTime_CSharp\Voting\Voting\obj\x64\Debug\Voting.sfproj.CoreCompileInputs.cache
+D:\BizRunTime_CSharp\Service_Fabric\Voting\Voting\obj\x64\Debug\Voting.sfproj.CoreCompileInputs.cache
