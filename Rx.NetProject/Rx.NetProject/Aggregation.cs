@@ -14,12 +14,16 @@ namespace Rx.NetProject
                 () => Console.WriteLine("{0} completed", name));
         }
 
+
+        //The return sequence will have a single value being the count of the values in the source sequence. 
         public static void CountMethod()
         {
             var numbers = Observable.Range(0, 3);
             numbers.Dump("numbers");
             numbers.Count().Dump("count");
         }
+
+
 
         public static void AggregateMethod()
         {
@@ -33,6 +37,8 @@ namespace Rx.NetProject
             numbers.OnCompleted();
         }
 
+
+        //The First() extension method simply returns the first value from a sequence.
         public static void FirstMethod()
         {
             var interval = Observable.Interval(TimeSpan.FromSeconds(3));

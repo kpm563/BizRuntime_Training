@@ -70,13 +70,19 @@ namespace Rx.NetProject
             //Aggregation.ScanMethod();
 
 
+            Transformation transObject = new Transformation();
+            //transObject.SelectMethod();
+            //transObject.SelectExample();
+            //transObject.SelectAnonymous();
+
+
+
+            
+            BlogSite.JsonSerialize();
+            BlogSite.JsonDeserialize();
+
             Console.WriteLine("Press enter to exit!");
             Console.Read();
         }
-
-
-
-       
-
     }
 }

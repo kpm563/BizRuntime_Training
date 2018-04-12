@@ -10,6 +10,9 @@ namespace Rx.NetProject
 {
     class Inspection
     {
+        /// <summary>
+        /// This will simply return an observable sequence that has the single value of false if the source completes without any values. If the source does produce a value however, then when the first value is produced, the result sequence will immediately push true and then complete. 
+        /// </summary>
         public void AnyMethod()
         {
             var subject = new Subject<int>();
@@ -20,6 +23,7 @@ namespace Rx.NetProject
             subject.OnCompleted();
         }
 
+        //If the first notification is an error then Any will just pass it along as an OnError notification.
         public void AnyErrorMethod()
         {
             var subject = new Subject<int>();
@@ -33,6 +37,10 @@ namespace Rx.NetProject
             subject.OnError(new Exception());
         }
 
+
+        /// <summary>
+        /// As soon as a value does not meet the predicate a false value is returned then the output sequence completed. If the source is empty, then All will push true as its value. As per the Any method, and errors will be passed along to the subscriber of the All method.
+        /// </summary>
         public void AllMethod()
         {
             var subject = new Subject<int>();
@@ -46,6 +54,8 @@ namespace Rx.NetProject
             subject.OnNext(1);
             subject.OnCompleted();
         }
+
+
 
         public void ContainsMethod()
         {
@@ -63,6 +73,8 @@ namespace Rx.NetProject
             subject.OnCompleted();
         }
 
+
+        //The DefaultIfEmpty extension method will return a single value if the source sequence is empty.
         public void DefaultIfEmpty()
         {
             var subject = new Subject<int>();
@@ -99,6 +111,8 @@ namespace Rx.NetProject
             subject.OnCompleted();
         }
 
+
+        //This method allows us to compare two observable sequences.
         public void SequenceEqual()
         {
             var subject1 = new Subject<int>();
