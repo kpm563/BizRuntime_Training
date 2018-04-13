@@ -65,7 +65,10 @@
   <ItemGroup>
     <Compile Include="Aggregation.cs" />
     <Compile Include="BlogSite.cs" />
+    <Compile Include="CombineSequences.cs" />
+    <Compile Include="ErrorHandling.cs" />
     <Compile Include="Inspection.cs" />
+    <Compile Include="LeaveMonad.cs" />
     <Compile Include="MyConsoleObserver.cs" />
     <Compile Include="MySequenceOfNumbers.cs" />
     <Compile Include="Program.cs" />
@@ -73,6 +76,7 @@
     <Compile Include="ReducingSequence.cs" />
     <Compile Include="Sequence.cs" />
     <Compile Include="SubjectClass.cs" />
+    <Compile Include="Taming.cs" />
     <Compile Include="Transformation.cs" />
   </ItemGroup>
   <ItemGroup>

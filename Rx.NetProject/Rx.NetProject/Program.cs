@@ -77,9 +77,27 @@ namespace Rx.NetProject
 
 
 
+
+            //BlogSite.JsonSerialize();
+            //BlogSite.JsonDeserialize();
+
+            Taming tamingObject = new Taming();
+            tamingObject.SideEffects();
+            tamingObject.WithPipeLine();
+            tamingObject.DoWithSideEffects();
+            tamingObject.DowithoutSideEffets();
+
+
+            LeaveMonad leaveMonadObject=new LeaveMonad();
+            leaveMonadObject.ForEach();
+            leaveMonadObject.WithSubscribe();
+            leaveMonadObject.ToEnumerableMethod();
+            leaveMonadObject.ToArrayMethod();
+
+            ErrorHandling errorObject =new ErrorHandling();
+            errorObject.Catch();
             
-            BlogSite.JsonSerialize();
-            BlogSite.JsonDeserialize();
+
 
             Console.WriteLine("Press enter to exit!");
             Console.Read();

@@ -80,6 +80,7 @@ namespace Rx.NetProject
                 var subject = new Subject<BlogSite>();
                 WriteSequenceToConsole(subject);
                 subject.OnNext(blogSite);
+                //subject.OnNext(blogSite);
 
                 
                 //Console.WriteLine("Actor Name :: " + blogSite.Name);
