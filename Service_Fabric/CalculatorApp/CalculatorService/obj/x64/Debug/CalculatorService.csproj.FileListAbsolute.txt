@@ -1,0 +1,4 @@
+E:\NUnit_Example\AzureServiceFabricSample\Chapter02\CalculatorApplication\CalculatorService\bin\x64\Debug\CalculatorService.exe.config
+E:\NUnit_Example\AzureServiceFabricSample\Chapter02\CalculatorApplication\CalculatorService\obj\x64\Debug\CalculatorService.csprojResolveAssemblyReference.cache
+D:\BizRunTime_CSharp\Service_Fabric\AzureServiceFabricSample\Chapter02\CalculatorApplication\CalculatorService\bin\x64\Debug\CalculatorService.exe.config
+D:\BizRunTime_CSharp\Service_Fabric\AzureServiceFabricSample\Chapter02\CalculatorApplication\CalculatorService\obj\x64\Debug\CalculatorService.csprojResolveAssemblyReference.cache
