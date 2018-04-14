@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Rx.NetProject
 {
@@ -81,26 +82,66 @@ namespace Rx.NetProject
             //BlogSite.JsonSerialize();
             //BlogSite.JsonDeserialize();
 
-            Taming tamingObject = new Taming();
-            tamingObject.SideEffects();
-            tamingObject.WithPipeLine();
-            tamingObject.DoWithSideEffects();
-            tamingObject.DowithoutSideEffets();
+            //Taming tamingObject = new Taming();
+            //tamingObject.SideEffects();
+            //tamingObject.WithPipeLine();
+            //tamingObject.DoWithSideEffects();
+            //tamingObject.DowithoutSideEffets();
 
 
-            LeaveMonad leaveMonadObject=new LeaveMonad();
-            leaveMonadObject.ForEach();
-            leaveMonadObject.WithSubscribe();
-            leaveMonadObject.ToEnumerableMethod();
-            leaveMonadObject.ToArrayMethod();
+            //LeaveMonad leaveMonadObject=new LeaveMonad();
+            //leaveMonadObject.ForEach();
+            //leaveMonadObject.WithSubscribe();
+            //leaveMonadObject.ToEnumerableMethod();
+            //leaveMonadObject.ToArrayMethod();
 
-            ErrorHandling errorObject =new ErrorHandling();
-            errorObject.Catch();
-            
+            //ErrorHandling errorObject =new ErrorHandling();
+            //errorObject.Catch();
 
+
+            TimeShiftedSequences timeShiftedObject = new TimeShiftedSequences();
+            //timeShiftedObject.BufferMethod();
+            //timeShiftedObject.OverlappingBehavior();
+            //timeShiftedObject.StandardBehavior();
+            //timeShiftedObject.SkipBehavior();
+            //timeShiftedObject.OverlappingByTime();
+            //timeShiftedObject.DelayMethod();
+            //timeShiftedObject.SampleMethod();
+            //timeShiftedObject.TimeOutMethod();
+
+
+
+            HotColdObservables hotColdObject = new HotColdObservables();
+            //hotColdObject.ReadFirstValue(EagerEvaluation());
+            //hotColdObject.DisposalMethod();
+            //hotColdObject.DisposalExample();
+            //hotColdObject.AutoDisposal();
+
+
+
+            Concurrency concurrencyObject = new Concurrency();
+            //concurrencyObject.SingleThread();
+            //concurrencyObject.MultiThreadExample();
+            //concurrencyObject.LockUps();
+
+
+
+            Tests tests = new Tests();
+            tests.Testing();
 
             Console.WriteLine("Press enter to exit!");
             Console.Read();
+        }
+
+        public static IEnumerable<int> EagerEvaluation()
+        {
+            var result = new List<int>();
+            Console.WriteLine("About to return 1");
+            result.Add(1);
+            //code below is executed but not used.
+            Console.WriteLine("About to return 2");
+            result.Add(2);
+            return result;
         }
     }
 }

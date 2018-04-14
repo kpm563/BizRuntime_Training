@@ -66,7 +66,9 @@
     <Compile Include="Aggregation.cs" />
     <Compile Include="BlogSite.cs" />
     <Compile Include="CombineSequences.cs" />
+    <Compile Include="Concurrency.cs" />
     <Compile Include="ErrorHandling.cs" />
+    <Compile Include="HotColdObservables.cs" />
     <Compile Include="Inspection.cs" />
     <Compile Include="LeaveMonad.cs" />
     <Compile Include="MyConsoleObserver.cs" />
@@ -77,6 +79,8 @@
     <Compile Include="Sequence.cs" />
     <Compile Include="SubjectClass.cs" />
     <Compile Include="Taming.cs" />
+    <Compile Include="Tests.cs" />
+    <Compile Include="TimeShiftedSequences.cs" />
     <Compile Include="Transformation.cs" />
   </ItemGroup>
   <ItemGroup>
