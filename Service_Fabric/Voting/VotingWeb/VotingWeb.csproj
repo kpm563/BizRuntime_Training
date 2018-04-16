@@ -7,6 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Angular.UI.Bootstrap" Version="2.5.0" />
+    <PackageReference Include="angularjs" Version="1.6.9" />
+    <PackageReference Include="AngularJS.Core" Version="1.6.8" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
     <PackageReference Include="Microsoft.ServiceFabric" Version="6.1.480" />
     <PackageReference Include="Microsoft.ServiceFabric.AspNetCore.Kestrel" Version="3.0.480" />

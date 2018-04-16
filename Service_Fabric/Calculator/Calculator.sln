@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "Calculator", "Calculator\Calculator.sfproj", "{03356DF1-722A-4BB7-B5A4-525D68537C18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorService", "CalculatorService\CalculatorService.csproj", "{866ED304-8C3E-4921-9F34-8E1139960EB2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03356DF1-722A-4BB7-B5A4-525D68537C18}.Debug|x64.ActiveCfg = Debug|x64
+		{03356DF1-722A-4BB7-B5A4-525D68537C18}.Debug|x64.Build.0 = Debug|x64
+		{03356DF1-722A-4BB7-B5A4-525D68537C18}.Debug|x64.Deploy.0 = Debug|x64
+		{03356DF1-722A-4BB7-B5A4-525D68537C18}.Release|x64.ActiveCfg = Release|x64
+		{03356DF1-722A-4BB7-B5A4-525D68537C18}.Release|x64.Build.0 = Release|x64
+		{03356DF1-722A-4BB7-B5A4-525D68537C18}.Release|x64.Deploy.0 = Release|x64
+		{866ED304-8C3E-4921-9F34-8E1139960EB2}.Debug|x64.ActiveCfg = Debug|x64
+		{866ED304-8C3E-4921-9F34-8E1139960EB2}.Debug|x64.Build.0 = Debug|x64
+		{866ED304-8C3E-4921-9F34-8E1139960EB2}.Release|x64.ActiveCfg = Release|x64
+		{866ED304-8C3E-4921-9F34-8E1139960EB2}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {01C63884-6497-4F9D-B695-97A657CE060A}
+	EndGlobalSection
+EndGlobal

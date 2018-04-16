@@ -1,0 +1,4 @@
+D:\BizRunTime_CSharp\Service_Fabric\SimpleStoreApplication\Common\bin\Debug\Common.dll
+D:\BizRunTime_CSharp\Service_Fabric\SimpleStoreApplication\Common\bin\Debug\Common.pdb
+D:\BizRunTime_CSharp\Service_Fabric\SimpleStoreApplication\Common\obj\Debug\Common.dll
+D:\BizRunTime_CSharp\Service_Fabric\SimpleStoreApplication\Common\obj\Debug\Common.pdb

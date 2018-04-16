@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/apache-ignite-fabric-2.4.0-bin/libs/ignite-core-2.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/apache-ignite-fabric-2.4.0-bin/libs/annotations-13.0.jar"/>
+	<classpathentry kind="lib" path="C:/apache-ignite-fabric-2.4.0-bin/libs/cache-api-1.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/apache-ignite-fabric-2.4.0-bin/libs/ignite-shmem-1.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/apache-ignite-fabric-2.4.0-bin/libs/ignite-indexing/commons-codec-1.6.jar"/>
+	<classpathentry kind="lib" path="C:/apache-ignite-fabric-2.4.0-bin/libs/ignite-indexing/h2-1.4.195.jar"/>
+	<classpathentry kind="lib" path="C:/apache-ignite-fabric-2.4.0-bin/libs/ignite-indexing/ignite-indexing-2.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/apache-ignite-fabric-2.4.0-bin/libs/ignite-indexing/lucene-analyzers-common-5.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/apache-ignite-fabric-2.4.0-bin/libs/ignite-indexing/lucene-core-5.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/apache-ignite-fabric-2.4.0-bin/libs/ignite-indexing/lucene-queryparser-5.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/apache-ignite-fabric-2.4.0-bin/libs/ignite-spring/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/apache-ignite-fabric-2.4.0-bin/libs/ignite-spring/ignite-spring-2.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/apache-ignite-fabric-2.4.0-bin/libs/ignite-spring/spring-aop-4.3.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/apache-ignite-fabric-2.4.0-bin/libs/ignite-spring/spring-beans-4.3.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/apache-ignite-fabric-2.4.0-bin/libs/ignite-spring/spring-context-4.3.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/apache-ignite-fabric-2.4.0-bin/libs/ignite-spring/spring-core-4.3.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/apache-ignite-fabric-2.4.0-bin/libs/ignite-spring/spring-expression-4.3.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/apache-ignite-fabric-2.4.0-bin/libs/ignite-spring/spring-jdbc-4.3.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/apache-ignite-fabric-2.4.0-bin/libs/ignite-spring/spring-tx-4.3.7.RELEASE.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
