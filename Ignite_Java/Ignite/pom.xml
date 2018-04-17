@@ -38,6 +38,12 @@
     <artifactId>ignite-indexing</artifactId>
     <version>2.4.0</version>
 </dependency>
+<dependency>
+  <groupId>org.apache.ignite</groupId>
+  <artifactId>ignite-log4j</artifactId>
+  <version>2.4.0</version>
+</dependency>  
+
     
       
   </dependencies>

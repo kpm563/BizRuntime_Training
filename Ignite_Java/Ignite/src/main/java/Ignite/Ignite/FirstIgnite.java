@@ -186,7 +186,5 @@ public class FirstIgnite {
 		object.ShowData();
 		//object.UpdateData();
 		//object.RemoveData();
-
 	}
-
 }

@@ -1,4 +1,4 @@
-package Ignite.Ignite;
+package serviceGrid;
 
 import org.apache.ignite.services.Service;
 
