@@ -1,4 +1,9 @@
-﻿namespace VotingWeb.Controllers
+// ------------------------------------------------------------
+//  Copyright (c) Microsoft Corporation.  All rights reserved.
+//  Licensed under the MIT License (MIT). See License.txt in the repo root for license information.
+// ------------------------------------------------------------
+
+namespace VotingWeb.Controllers
 {
     using System;
     using System.Collections.Generic;
@@ -13,7 +18,7 @@
     using Newtonsoft.Json;
 
     [Produces("application/json")]
-    [Route("api/Votes")]
+    [Route("api/[controller]")]
     public class VotesController : Controller
     {
         private readonly HttpClient httpClient;
@@ -41,7 +46,7 @@
             foreach (Partition partition in partitions)
             {
                 string proxyUrl =
-                    $"{proxyAddress}/api/VoteData?PartitionKey={((Int64RangePartitionInformation)partition.PartitionInformation).LowKey}&PartitionKind=Int64Range";
+                    $"{proxyAddress}/api/VoteData?PartitionKey={((Int64RangePartitionInformation) partition.PartitionInformation).LowKey}&PartitionKind=Int64Range";
 
                 using (HttpResponseMessage response = await this.httpClient.GetAsync(proxyUrl))
                 {
@@ -73,7 +78,7 @@
             {
                 return new ContentResult()
                 {
-                    StatusCode = (int)response.StatusCode,
+                    StatusCode = (int) response.StatusCode,
                     Content = await response.Content.ReadAsStringAsync()
                 };
             }
@@ -92,7 +97,7 @@
             {
                 if (response.StatusCode != System.Net.HttpStatusCode.OK)
                 {
-                    return this.StatusCode((int)response.StatusCode);
+                    return this.StatusCode((int) response.StatusCode);
                 }
             }
 
