@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.0",
+    "signature": "8b5d674d70bdfffe866ccfbc1f69450682ce0864"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.0": {
+      "IgniteDotNetApp/1.0.0": {
+        "dependencies": {
+          "Apache.Ignite": "2.4.0"
+        },
+        "runtime": {
+          "IgniteDotNetApp.dll": {}
+        }
+      },
+      "Apache.Ignite/2.4.0": {
+        "runtime": {
+          "lib/net40/Apache.Ignite.Core.dll": {},
+          "lib/net40/Apache.Ignite.exe": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "IgniteDotNetApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Apache.Ignite/2.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OYYPH7CVCAQ9axxaF7AIODsxJ78WSZWty3PXhBiI61yrKx38vhcL4rD66AM/3KJjJOnWMwm2nmRh/VC1SqBodw==",
+      "path": "apache.ignite/2.4.0",
+      "hashPath": "apache.ignite.2.4.0.nupkg.sha512"
+    }
+  }
+}

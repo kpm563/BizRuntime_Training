@@ -1,0 +1,11 @@
+D:\BizRunTime_CSharp\IgniteDotNetApp\IgniteDotNetApp\bin\Debug\netcoreapp2.0\IgniteDotNetApp.deps.json
+D:\BizRunTime_CSharp\IgniteDotNetApp\IgniteDotNetApp\bin\Debug\netcoreapp2.0\IgniteDotNetApp.runtimeconfig.json
+D:\BizRunTime_CSharp\IgniteDotNetApp\IgniteDotNetApp\bin\Debug\netcoreapp2.0\IgniteDotNetApp.runtimeconfig.dev.json
+D:\BizRunTime_CSharp\IgniteDotNetApp\IgniteDotNetApp\bin\Debug\netcoreapp2.0\IgniteDotNetApp.dll
+D:\BizRunTime_CSharp\IgniteDotNetApp\IgniteDotNetApp\obj\Debug\netcoreapp2.0\IgniteDotNetApp.csprojResolveAssemblyReference.cache
+D:\BizRunTime_CSharp\IgniteDotNetApp\IgniteDotNetApp\obj\Debug\netcoreapp2.0\IgniteDotNetApp.csproj.CoreCompileInputs.cache
+D:\BizRunTime_CSharp\IgniteDotNetApp\IgniteDotNetApp\obj\Debug\netcoreapp2.0\IgniteDotNetApp.AssemblyInfoInputs.cache
+D:\BizRunTime_CSharp\IgniteDotNetApp\IgniteDotNetApp\obj\Debug\netcoreapp2.0\IgniteDotNetApp.AssemblyInfo.cs
+D:\BizRunTime_CSharp\IgniteDotNetApp\IgniteDotNetApp\bin\Debug\netcoreapp2.0\IgniteDotNetApp.pdb
+D:\BizRunTime_CSharp\IgniteDotNetApp\IgniteDotNetApp\obj\Debug\netcoreapp2.0\IgniteDotNetApp.dll
+D:\BizRunTime_CSharp\IgniteDotNetApp\IgniteDotNetApp\obj\Debug\netcoreapp2.0\IgniteDotNetApp.pdb
