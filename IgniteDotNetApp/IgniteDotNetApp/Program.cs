@@ -12,42 +12,57 @@ namespace IgniteDotNetApp
         {
             //Console.WriteLine("Hello World!");
 
-            using (var ignite = Ignition.Start())
-            {
-                Console.WriteLine();
-                //Console.WriteLine(">> Cache put get started :: ");
+            //using (var ignite = Ignition.Start())
+            //{
+            //    Console.WriteLine();
+            //    //Console.WriteLine(">> Cache put get started :: ");
 
-                //ignite.GetOrCreateCache<object, object>(PutGetExample.CacheName).Clear();
-                //PutGetExample.PutGet(ignite);
-                //PutGetExample.PutGetBinary(ignite);
-                //PutGetExample.PutGetAll(ignite);
-                //PutGetExample.PutAllGetAllBinary(ignite);
+            //    //ignite.GetOrCreateCache<object, object>(PutGetExample.CacheName).Clear();
+            //    //PutGetExample.PutGet(ignite);
+            //    //PutGetExample.PutGetBinary(ignite);
+            //    //PutGetExample.PutGetAll(ignite);
+            //    //PutGetExample.PutAllGetAllBinary(ignite);
 
 
-                Console.WriteLine();
-                Console.WriteLine(">>> Optimistic transaction example started.");
-                var cacheCfg = new CacheConfiguration(OptimisticTransaction.CacheName) { AtomicityMode = CacheAtomicityMode.Transactional };
 
-                var cache = ignite.GetOrCreateCache<int, int>(cacheCfg);
 
-                cache[1] = 0;
 
-                var task1 = Task.Factory.StartNew(() => OptimisticTransaction.IncrementCacheValue(cache, 1));
-                var task2 = Task.Factory.StartNew(() => OptimisticTransaction.IncrementCacheValue(cache, 2));
+            //    //Console.WriteLine();
+            //    //Console.WriteLine(">>> Optimistic transaction example started.");
+            //    //var cacheCfg = new CacheConfiguration(OptimisticTransaction.CacheName) { AtomicityMode = CacheAtomicityMode.Transactional };
 
-                Task.WaitAll(task1, task2);
+            //    //var cache = ignite.GetOrCreateCache<int, int>(cacheCfg);
 
-                Console.WriteLine();
-                Console.WriteLine(">>> Resulting value in cache: " + cache[1]);
+            //    //cache[1] = 0;
 
-                Console.WriteLine();
-            }
+            //    //var task1 = Task.Factory.StartNew(() => OptimisticTransaction.IncrementCacheValue(cache, 1));
+            //    //var task2 = Task.Factory.StartNew(() => OptimisticTransaction.IncrementCacheValue(cache, 2));
+
+            //    //Task.WaitAll(task1, task2);
+
+            //    //Console.WriteLine();
+            //    //Console.WriteLine(">>> Resulting value in cache: " + cache[1]);
+
+
+            //    Console.WriteLine();
+            //}
 
             //NearCache.NearCacheExample();
 
 
 
-            Console.WriteLine("\n>>> Press any key to exit ...");
+
+
+            //QueryExample.Caller();
+            //StoreExample.StoreCaller();
+            //Transaction.TransactionCaller();
+            //BinaryMode.BinaryModeCaller();
+            //ContinuousQuery.ContinuousQueryCaller();
+            //DataStreamer.DataStreamerMethod();
+            //EntryProcessor.EntryCaller();
+            TransactionDeadlockDetection.TransationCaller();
+
+
             Console.ReadKey();
         }
     }
