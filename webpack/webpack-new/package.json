@@ -1,0 +1,18 @@
+{
+  "name": "BizruntimeProject",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "webpack": "webpack",
+    "dev-server": "webpack-dev-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.15",
+    "webpack-dev-server": "^3.1.3"
+  }
+}
