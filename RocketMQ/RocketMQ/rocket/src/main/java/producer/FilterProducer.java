@@ -15,7 +15,7 @@ public class FilterProducer {
 		
 		try {
 			for (int i = 0; i < 6000000; i++) {
-                Message msg = new Message("TopicFilter7",
+                Message msg = new Message("TopicFilter",
                     "TagA",
                     "OrderID001",
                     "Hello world".getBytes(RemotingHelper.DEFAULT_CHARSET));
